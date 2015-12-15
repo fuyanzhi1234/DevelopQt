@@ -50,6 +50,7 @@
 #include <QSignalMapper>
 #include <QVariant>
 #include <QSettings>
+#include <QDebug>
 
 #include "ui_mainwindow.h"
 
@@ -135,7 +136,23 @@ public slots:
     void on_WebBrowser_CommandStateChange(int cmd, bool on);
     void on_WebBrowser_BeforeNavigate();
 	void on_WebBrowser_NavigateComplete(const QString &address);
-	void on_WebBrowser_NavigateError(IDispatch *a, const QVariant &b, const QVariant &c, const QVariant &d, bool &e);
+	/*ÍøÒ³¼ÓÔØ´íÎó
+	pDisp
+	Object that evaluates to the top-level or frame WebBrowser object corresponding to the failed navigation.
+	URL
+	String expression that evaluates to the URL for which navigation failed.
+	TargetFrameName
+	String that evaluates to the name of the frame in which the resource is to be displayed, or Null if no named frame is targeted for the resource.
+	StatusCode
+	Integer that contains a status code corresponding to the error, if available. For a list of the possible status codes, see NavigateError Event Status Codes.
+	Cancel
+	Boolean that specifies whether to cancel the navigation to an error page and/or any further autosearch.
+	False
+	Default. Continue with navigation to an error page or autosearch.
+	True
+	Cancel navigation to an error page or autosearch.
+	*/
+	void on_WebBrowser_NavigateError(IDispatch *pDisp, QVariant &URL, QVariant &TargetFrameName, QVariant &StatusCode, bool &Cancel);
 	void on_WebBrowser_NewWindow(const QString &address, int a, const QString &b, QVariant &c, const QString &d, bool &e);
 	void on_WebBrowser_DocumentComplete(IDispatch *a, QVariant &b);
 	void customContextMenuRequested(const QPoint &pt);
@@ -175,12 +192,12 @@ MainWindow::MainWindow()
     tbAddress->insertWidget(actionGo, addressEdit);
 
     connect(addressEdit, SIGNAL(returnPressed()), actionGo, SLOT(trigger()));
-//     connect(actionBack, SIGNAL(triggered()), WebBrowser, SLOT(GoBack()));
-//     connect(actionForward, SIGNAL(triggered()), WebBrowser, SLOT(GoForward()));
-//     connect(actionStop, SIGNAL(triggered()), WebBrowser, SLOT(Stop()));
+    connect(actionBack, SIGNAL(triggered()), WebBrowser, SLOT(GoBack()));
+    connect(actionForward, SIGNAL(triggered()), WebBrowser, SLOT(GoForward()));
+    connect(actionStop, SIGNAL(triggered()), WebBrowser, SLOT(Stop()));
     connect(actionRefresh, SIGNAL(triggered()), this, SLOT(test()));
-//     connect(actionHome, SIGNAL(triggered()), WebBrowser, SLOT(GoHome()));
-//     connect(actionSearch, SIGNAL(triggered()), WebBrowser, SLOT(GoSearch()));
+    connect(actionHome, SIGNAL(triggered()), WebBrowser, SLOT(GoHome()));
+    connect(actionSearch, SIGNAL(triggered()), WebBrowser, SLOT(GoSearch()));
 
     pb = new QProgressBar(statusBar());
     pb->setTextVisible(false);
@@ -305,11 +322,11 @@ void MainWindow::on_WebBrowser_NavigateComplete(const QString &url)
     addressEdit->blockSignals(blocked);
 }
 
-void MainWindow::on_WebBrowser_NavigateError(IDispatch *a, const QVariant &b, const QVariant &c, const QVariant &d, bool &e)
+void MainWindow::on_WebBrowser_NavigateError(IDispatch *pDisp, QVariant &URL, QVariant &TargetFrameName, QVariant &StatusCode, bool &Cancel)
 {
-	actionStop->setEnabled(false);
-	const bool blocked = addressEdit->blockSignals(true);
-
+	qDebug()<<"--------->on_WebBrowser_NavigateError";
+	stackedWidget->setCurrentIndex(1);
+	Cancel = true;
 }
 
 void MainWindow::on_WebBrowser_NewWindow(const QString &address, int a, const QString &b, QVariant &c, const QString &d, bool &e)
@@ -321,6 +338,8 @@ void MainWindow::on_WebBrowser_NewWindow(const QString &address, int a, const QS
 
 void MainWindow::on_WebBrowser_DocumentComplete(IDispatch *a, QVariant &b)
 {
+	qDebug()<<"--------->on_WebBrowser_DocumentComplete";
+
 	return;
 }
 
@@ -347,6 +366,8 @@ void MainWindow::on_actionGo_triggered()
 
 void MainWindow::navigate(const QString &url)
 {
+	stackedWidget->setCurrentIndex(0);
+	qDebug()<<"--------->navigate";
     WebBrowser->dynamicCall("Navigate(const QString&)", url);
 }
 

@@ -21,6 +21,7 @@ Release/
 debug/
 release/
 Win32/
+ipch/
 
 # Qt-es
 

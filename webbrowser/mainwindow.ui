@@ -45,7 +45,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>页面加载错误。。。</string>
         </property>
        </widget>
       </widget>
