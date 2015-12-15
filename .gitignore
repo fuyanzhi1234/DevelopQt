@@ -10,6 +10,18 @@
 *.dll
 *.dylib
 
+*.opensdf
+*.user
+*.suo
+*.sdf
+
+# ignore cache dir
+Debug/
+Release/
+debug/
+release/
+Win32/
+
 # Qt-es
 
 /.qmake.cache
