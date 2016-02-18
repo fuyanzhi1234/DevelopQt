@@ -9,6 +9,8 @@ NewCefWin::NewCefWin(QWidget *parent)
 {
 	ui.setupUi(this);
 
+	setAttribute(Qt::WA_DeleteOnClose);
+
 	// Information used when creating the native window.
 	CefWindowInfo window_info;
 
@@ -39,5 +41,5 @@ NewCefWin::NewCefWin(QWidget *parent)
 
 NewCefWin::~NewCefWin()
 {
-
+// 	SimpleHandler::GetInstance()->CloseAllBrowsers(false);
 }

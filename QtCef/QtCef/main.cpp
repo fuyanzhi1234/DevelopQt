@@ -8,6 +8,7 @@
 #include "cefsimple/simple_app.h"
 #include "include/cef_sandbox_win.h"
 #include <QMessageBox>
+#include "cefsimple/simple_handler.h"
 
 int main(int argc, char *argv[])
 {

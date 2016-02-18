@@ -50,6 +50,7 @@ SimpleHandler* SimpleHandler::GetInstance() {
 void SimpleHandler::OnAfterCreated(CefRefPtr<CefBrowser> browser) {
   CEF_REQUIRE_UI_THREAD();
 
+  browser->GetHost()->SetMouseCursorChangeDisabled(true);
   // Add to the list of existing browsers.
   browser_list_.push_back(browser);
 }
@@ -130,7 +131,10 @@ void SimpleHandler::OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
 	CefRefPtr<CefContextMenuParams> params,
 	CefRefPtr<CefMenuModel> model)
 {
-	return;
+	if (model)
+	{
+		model->Clear();
+	}
 }
 
 bool SimpleHandler::OnContextMenuCommand(CefRefPtr<CefBrowser> browser,

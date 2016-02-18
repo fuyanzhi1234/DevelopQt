@@ -22,10 +22,9 @@ class SimpleHandler : public CefClient,
   static SimpleHandler* GetInstance();
 
   // CefClient methods
-  CefRefPtr<CefContextMenuHandler> GetContextMenuHandler() OVERRIDE{
+  virtual CefRefPtr<CefContextMenuHandler> GetContextMenuHandler() OVERRIDE{
 	  return this;
   }
-  // CefClient methods:
   virtual CefRefPtr<CefDisplayHandler> GetDisplayHandler() OVERRIDE {
     return this;
   }
