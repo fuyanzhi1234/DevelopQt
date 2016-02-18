@@ -76,50 +76,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\cefclient\browser\binding_test.cc" />
-    <ClCompile Include="..\cefclient\browser\browser_window.cc" />
-    <ClCompile Include="..\cefclient\browser\browser_window_osr_win.cc" />
-    <ClCompile Include="..\cefclient\browser\browser_window_std_win.cc" />
-    <ClCompile Include="..\cefclient\browser\bytes_write_handler.cc" />
-    <ClCompile Include="..\cefclient\browser\client_app_browser.cc" />
-    <ClCompile Include="..\cefclient\browser\client_app_delegates_browser.cc" />
-    <ClCompile Include="..\cefclient\browser\client_handler.cc" />
-    <ClCompile Include="..\cefclient\browser\client_handler_osr.cc" />
-    <ClCompile Include="..\cefclient\browser\client_handler_std.cc" />
-    <ClCompile Include="..\cefclient\browser\dialog_test.cc" />
-    <ClCompile Include="..\cefclient\browser\geometry_util.cc" />
-    <ClCompile Include="..\cefclient\browser\main_context.cc" />
-    <ClCompile Include="..\cefclient\browser\main_context_impl.cc" />
-    <ClCompile Include="..\cefclient\browser\main_context_impl_win.cc" />
-    <ClCompile Include="..\cefclient\browser\main_message_loop.cc" />
-    <ClCompile Include="..\cefclient\browser\main_message_loop_multithreaded_win.cc" />
-    <ClCompile Include="..\cefclient\browser\main_message_loop_std.cc" />
-    <ClCompile Include="..\cefclient\browser\osr_dragdrop_win.cc" />
-    <ClCompile Include="..\cefclient\browser\osr_renderer.cc" />
-    <ClCompile Include="..\cefclient\browser\osr_window_win.cc" />
-    <ClCompile Include="..\cefclient\browser\preferences_test.cc" />
-    <ClCompile Include="..\cefclient\browser\resource_util_win.cc" />
-    <ClCompile Include="..\cefclient\browser\response_filter_test.cc" />
-    <ClCompile Include="..\cefclient\browser\root_window.cc" />
-    <ClCompile Include="..\cefclient\browser\root_window_manager.cc" />
-    <ClCompile Include="..\cefclient\browser\root_window_win.cc" />
-    <ClCompile Include="..\cefclient\browser\scheme_test.cc" />
-    <ClCompile Include="..\cefclient\browser\temp_window_win.cc" />
-    <ClCompile Include="..\cefclient\browser\test_runner.cc" />
-    <ClCompile Include="..\cefclient\browser\urlrequest_test.cc" />
-    <ClCompile Include="..\cefclient\browser\util_win.cc" />
-    <ClCompile Include="..\cefclient\browser\window_test.cc" />
-    <ClCompile Include="..\cefclient\browser\window_test_win.cc" />
-    <ClCompile Include="..\cefclient\common\client_app.cc" />
-    <ClCompile Include="..\cefclient\common\client_app_delegates_common.cc" />
-    <ClCompile Include="..\cefclient\common\client_app_other.cc" />
-    <ClCompile Include="..\cefclient\common\client_switches.cc" />
-    <ClCompile Include="..\cefclient\common\scheme_test_common.cc" />
-    <ClCompile Include="..\cefclient\renderer\client_app_delegates_renderer.cc" />
-    <ClCompile Include="..\cefclient\renderer\client_app_renderer.cc" />
-    <ClCompile Include="..\cefclient\renderer\client_renderer.cc" />
-    <ClCompile Include="..\cefclient\renderer\performance_test.cc" />
-    <ClCompile Include="..\cefclient\renderer\performance_test_tests.cc" />
     <ClCompile Include="..\cefsimple\simple_app.cc" />
     <ClCompile Include="..\cefsimple\simple_handler.cc" />
     <ClCompile Include="..\cefsimple\simple_handler_win.cc" />
@@ -170,49 +126,6 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\cefclient\browser\binding_test.h" />
-    <ClInclude Include="..\cefclient\browser\browser_window.h" />
-    <ClInclude Include="..\cefclient\browser\browser_window_osr_win.h" />
-    <ClInclude Include="..\cefclient\browser\browser_window_std_win.h" />
-    <ClInclude Include="..\cefclient\browser\bytes_write_handler.h" />
-    <ClInclude Include="..\cefclient\browser\client_app_browser.h" />
-    <ClInclude Include="..\cefclient\browser\client_handler.h" />
-    <ClInclude Include="..\cefclient\browser\client_handler_osr.h" />
-    <ClInclude Include="..\cefclient\browser\client_handler_std.h" />
-    <ClInclude Include="..\cefclient\browser\client_types.h" />
-    <ClInclude Include="..\cefclient\browser\dialog_test.h" />
-    <ClInclude Include="..\cefclient\browser\geometry_util.h" />
-    <ClInclude Include="..\cefclient\browser\main_context.h" />
-    <ClInclude Include="..\cefclient\browser\main_context_impl.h" />
-    <ClInclude Include="..\cefclient\browser\main_message_loop.h" />
-    <ClInclude Include="..\cefclient\browser\main_message_loop_multithreaded_win.h" />
-    <ClInclude Include="..\cefclient\browser\main_message_loop_std.h" />
-    <ClInclude Include="..\cefclient\browser\osr_dragdrop_events.h" />
-    <ClInclude Include="..\cefclient\browser\osr_dragdrop_win.h" />
-    <ClInclude Include="..\cefclient\browser\osr_renderer.h" />
-    <ClInclude Include="..\cefclient\browser\osr_window_win.h" />
-    <ClInclude Include="..\cefclient\browser\preferences_test.h" />
-    <ClInclude Include="..\cefclient\browser\resource.h" />
-    <ClInclude Include="..\cefclient\browser\resource_util.h" />
-    <ClInclude Include="..\cefclient\browser\response_filter_test.h" />
-    <ClInclude Include="..\cefclient\browser\root_window.h" />
-    <ClInclude Include="..\cefclient\browser\root_window_manager.h" />
-    <ClInclude Include="..\cefclient\browser\root_window_win.h" />
-    <ClInclude Include="..\cefclient\browser\scheme_test.h" />
-    <ClInclude Include="..\cefclient\browser\temp_window.h" />
-    <ClInclude Include="..\cefclient\browser\temp_window_win.h" />
-    <ClInclude Include="..\cefclient\browser\test_runner.h" />
-    <ClInclude Include="..\cefclient\browser\urlrequest_test.h" />
-    <ClInclude Include="..\cefclient\browser\util_win.h" />
-    <ClInclude Include="..\cefclient\browser\window_test.h" />
-    <ClInclude Include="..\cefclient\common\client_app.h" />
-    <ClInclude Include="..\cefclient\common\client_app_other.h" />
-    <ClInclude Include="..\cefclient\common\client_switches.h" />
-    <ClInclude Include="..\cefclient\common\scheme_test_common.h" />
-    <ClInclude Include="..\cefclient\renderer\client_app_renderer.h" />
-    <ClInclude Include="..\cefclient\renderer\client_renderer.h" />
-    <ClInclude Include="..\cefclient\renderer\performance_test.h" />
-    <ClInclude Include="..\cefclient\renderer\performance_test_setup.h" />
     <ClInclude Include="..\cefsimple\resource.h" />
     <ClInclude Include="..\cefsimple\simple_app.h" />
     <ClInclude Include="..\cefsimple\simple_handler.h" />
@@ -242,20 +155,6 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\cefclient\resources\binding.html" />
-    <None Include="..\cefclient\resources\dialogs.html" />
-    <None Include="..\cefclient\resources\localstorage.html" />
-    <None Include="..\cefclient\resources\osr_test.html" />
-    <None Include="..\cefclient\resources\other_tests.html" />
-    <None Include="..\cefclient\resources\pdf.html" />
-    <None Include="..\cefclient\resources\performance.html" />
-    <None Include="..\cefclient\resources\performance2.html" />
-    <None Include="..\cefclient\resources\preferences.html" />
-    <None Include="..\cefclient\resources\response_filter.html" />
-    <None Include="..\cefclient\resources\transparency.html" />
-    <None Include="..\cefclient\resources\urlrequest.html" />
-    <None Include="..\cefclient\resources\window.html" />
-    <None Include="..\cefclient\resources\xmlhttprequest.html" />
     <None Include="..\cefsimple\Debug\natives_blob.bin" />
     <None Include="..\cefsimple\Debug\snapshot_blob.bin" />
     <CustomBuild Include="newcefwin.ui">
@@ -270,8 +169,6 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <Manifest Include="..\cefclient\resources\win\cefclient.exe.manifest" />
-    <Manifest Include="..\cefclient\resources\win\compatibility.manifest" />
     <Manifest Include="..\cefsimple\cefsimple.exe.manifest" />
     <Manifest Include="..\cefsimple\compatibility.manifest" />
   </ItemGroup>
