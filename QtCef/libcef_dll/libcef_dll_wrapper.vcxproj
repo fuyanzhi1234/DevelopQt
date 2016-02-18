@@ -62,15 +62,15 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libcef_dll_wrapper.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libcef_dll_wrapper</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libcef_dll_wrapper.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libcef_dll_wrapper</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libcef_dll_wrapper.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libcef_dll_wrapper</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
@@ -207,160 +207,104 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\cmake-3.4.3-win32-x86\bin\cmake.exe" -HC:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll -BC:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll --check-stamp-file C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll/CMakeLists.txt;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeLists.txt;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystem.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeRCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\feature_tests.cxx;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\cmake-3.4.3-win32-x86\bin\cmake.exe" -HC:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll -BC:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll --check-stamp-file C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll/CMakeLists.txt;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeLists.txt;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystem.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeRCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\feature_tests.cxx;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\cmake-3.4.3-win32-x86\bin\cmake.exe" -HC:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll -BC:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll --check-stamp-file C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll/CMakeLists.txt;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeLists.txt;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystem.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeRCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\feature_tests.cxx;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\cmake-3.4.3-win32-x86\bin\cmake.exe" -HC:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll -BC:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll --check-stamp-file C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll/CMakeLists.txt;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeLists.txt;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystem.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\GNU-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeFindBinUtils.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeRCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestRCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompilerABI.c;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Internal\FeatureTesting.cmake;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\feature_tests.cxx;C:\Program Files (x86)\cmake-3.4.3-win32-x86\share\cmake-3.4\Modules\CMakeCXXCompiler.cmake.in;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\3.4.3\CMakeCXXCompiler.cmake;C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\transfer_util.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper_types.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\app_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\base_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\browser_process_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\client_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\completion_callback_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\context_menu_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\cookie_visitor_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\delete_cookies_callback_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\dialog_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\display_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\domvisitor_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\download_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\drag_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\end_tracing_callback_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\find_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\focus_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\geolocation_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\get_geolocation_callback_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\jsdialog_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\keyboard_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\life_span_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\load_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\navigation_entry_visitor_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\pdf_print_callback_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\print_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\read_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\render_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\render_process_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\request_context_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\request_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\resource_bundle_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\resource_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\response_filter_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\run_file_dialog_callback_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\scheme_handler_factory_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\set_cookie_callback_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\string_visitor_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\task_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\urlrequest_client_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\v8accessor_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\v8handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\web_plugin_info_visitor_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\web_plugin_unstable_callback_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\write_handler_cpptoc.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\auth_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\before_download_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\binary_value_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\browser_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\browser_host_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\command_line_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\context_menu_params_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\cookie_manager_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\dictionary_value_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\domdocument_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\domnode_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\download_item_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\download_item_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\drag_data_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\file_dialog_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\frame_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\geolocation_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\jsdialog_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\list_value_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\menu_model_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\navigation_entry_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\post_data_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\post_data_element_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\print_dialog_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\print_job_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\print_settings_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\process_message_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\request_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\request_context_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\request_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\resource_bundle_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\response_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\run_context_menu_callback_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\scheme_registrar_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\sslcert_principal_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\sslinfo_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\stream_reader_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\stream_writer_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\task_runner_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\urlrequest_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8context_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8exception_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8stack_frame_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8stack_trace_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8value_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\value_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\web_plugin_info_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\xml_reader_ctocpp.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\zip_reader_ctocpp.h" />
+    <ClInclude Include="transfer_util.h" />
+    <ClInclude Include="wrapper_types.h" />
+    <ClInclude Include="cpptoc\app_cpptoc.h" />
+    <ClInclude Include="cpptoc\base_cpptoc.h" />
+    <ClInclude Include="cpptoc\browser_process_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\client_cpptoc.h" />
+    <ClInclude Include="cpptoc\completion_callback_cpptoc.h" />
+    <ClInclude Include="cpptoc\context_menu_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\cookie_visitor_cpptoc.h" />
+    <ClInclude Include="cpptoc\cpptoc.h" />
+    <ClInclude Include="cpptoc\delete_cookies_callback_cpptoc.h" />
+    <ClInclude Include="cpptoc\dialog_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\display_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\domvisitor_cpptoc.h" />
+    <ClInclude Include="cpptoc\download_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\drag_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\end_tracing_callback_cpptoc.h" />
+    <ClInclude Include="cpptoc\find_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\focus_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\geolocation_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\get_geolocation_callback_cpptoc.h" />
+    <ClInclude Include="cpptoc\jsdialog_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\keyboard_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\life_span_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\load_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\navigation_entry_visitor_cpptoc.h" />
+    <ClInclude Include="cpptoc\pdf_print_callback_cpptoc.h" />
+    <ClInclude Include="cpptoc\print_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\read_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\render_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\render_process_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\request_context_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\request_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\resource_bundle_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\resource_handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\response_filter_cpptoc.h" />
+    <ClInclude Include="cpptoc\run_file_dialog_callback_cpptoc.h" />
+    <ClInclude Include="cpptoc\scheme_handler_factory_cpptoc.h" />
+    <ClInclude Include="cpptoc\set_cookie_callback_cpptoc.h" />
+    <ClInclude Include="cpptoc\string_visitor_cpptoc.h" />
+    <ClInclude Include="cpptoc\task_cpptoc.h" />
+    <ClInclude Include="cpptoc\urlrequest_client_cpptoc.h" />
+    <ClInclude Include="cpptoc\v8accessor_cpptoc.h" />
+    <ClInclude Include="cpptoc\v8handler_cpptoc.h" />
+    <ClInclude Include="cpptoc\web_plugin_info_visitor_cpptoc.h" />
+    <ClInclude Include="cpptoc\web_plugin_unstable_callback_cpptoc.h" />
+    <ClInclude Include="cpptoc\write_handler_cpptoc.h" />
+    <ClInclude Include="ctocpp\auth_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\before_download_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\binary_value_ctocpp.h" />
+    <ClInclude Include="ctocpp\browser_ctocpp.h" />
+    <ClInclude Include="ctocpp\browser_host_ctocpp.h" />
+    <ClInclude Include="ctocpp\callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\command_line_ctocpp.h" />
+    <ClInclude Include="ctocpp\context_menu_params_ctocpp.h" />
+    <ClInclude Include="ctocpp\cookie_manager_ctocpp.h" />
+    <ClInclude Include="ctocpp\ctocpp.h" />
+    <ClInclude Include="ctocpp\dictionary_value_ctocpp.h" />
+    <ClInclude Include="ctocpp\domdocument_ctocpp.h" />
+    <ClInclude Include="ctocpp\domnode_ctocpp.h" />
+    <ClInclude Include="ctocpp\download_item_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\download_item_ctocpp.h" />
+    <ClInclude Include="ctocpp\drag_data_ctocpp.h" />
+    <ClInclude Include="ctocpp\file_dialog_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\frame_ctocpp.h" />
+    <ClInclude Include="ctocpp\geolocation_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\jsdialog_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\list_value_ctocpp.h" />
+    <ClInclude Include="ctocpp\menu_model_ctocpp.h" />
+    <ClInclude Include="ctocpp\navigation_entry_ctocpp.h" />
+    <ClInclude Include="ctocpp\post_data_ctocpp.h" />
+    <ClInclude Include="ctocpp\post_data_element_ctocpp.h" />
+    <ClInclude Include="ctocpp\print_dialog_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\print_job_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\print_settings_ctocpp.h" />
+    <ClInclude Include="ctocpp\process_message_ctocpp.h" />
+    <ClInclude Include="ctocpp\request_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\request_context_ctocpp.h" />
+    <ClInclude Include="ctocpp\request_ctocpp.h" />
+    <ClInclude Include="ctocpp\resource_bundle_ctocpp.h" />
+    <ClInclude Include="ctocpp\response_ctocpp.h" />
+    <ClInclude Include="ctocpp\run_context_menu_callback_ctocpp.h" />
+    <ClInclude Include="ctocpp\scheme_registrar_ctocpp.h" />
+    <ClInclude Include="ctocpp\sslcert_principal_ctocpp.h" />
+    <ClInclude Include="ctocpp\sslinfo_ctocpp.h" />
+    <ClInclude Include="ctocpp\stream_reader_ctocpp.h" />
+    <ClInclude Include="ctocpp\stream_writer_ctocpp.h" />
+    <ClInclude Include="ctocpp\task_runner_ctocpp.h" />
+    <ClInclude Include="ctocpp\urlrequest_ctocpp.h" />
+    <ClInclude Include="ctocpp\v8context_ctocpp.h" />
+    <ClInclude Include="ctocpp\v8exception_ctocpp.h" />
+    <ClInclude Include="ctocpp\v8stack_frame_ctocpp.h" />
+    <ClInclude Include="ctocpp\v8stack_trace_ctocpp.h" />
+    <ClInclude Include="ctocpp\v8value_ctocpp.h" />
+    <ClInclude Include="ctocpp\value_ctocpp.h" />
+    <ClInclude Include="ctocpp\web_plugin_info_ctocpp.h" />
+    <ClInclude Include="ctocpp\xml_reader_ctocpp.h" />
+    <ClInclude Include="ctocpp\zip_reader_ctocpp.h" />
     <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\include\cef_app.h" />
     <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\include\cef_auth_callback.h" />
     <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\include\cef_base.h" />
@@ -538,126 +482,126 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\include\wrapper\cef_stream_resource_handler.h" />
     <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\include\wrapper\cef_xml_object.h" />
     <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\include\wrapper\cef_zip_archive.h" />
-    <ClInclude Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\cef_browser_info_map.h" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\transfer_util.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_atomicops_x86_gcc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_bind_helpers.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_callback_helpers.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_callback_internal.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_lock.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_lock_impl.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_logging.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_ref_counted.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_string16.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_thread_checker_impl.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_thread_collision_warner.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\base\cef_weak_ptr.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\app_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\base_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\browser_process_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\client_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\completion_callback_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\context_menu_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\cookie_visitor_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\delete_cookies_callback_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\dialog_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\display_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\domvisitor_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\download_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\drag_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\end_tracing_callback_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\find_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\focus_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\geolocation_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\get_geolocation_callback_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\jsdialog_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\keyboard_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\life_span_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\load_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\navigation_entry_visitor_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\pdf_print_callback_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\print_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\read_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\render_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\render_process_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\request_context_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\request_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\resource_bundle_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\resource_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\response_filter_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\run_file_dialog_callback_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\scheme_handler_factory_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\set_cookie_callback_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\string_visitor_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\task_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\urlrequest_client_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\v8accessor_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\v8handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\web_plugin_info_visitor_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\web_plugin_unstable_callback_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\cpptoc\write_handler_cpptoc.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\auth_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\before_download_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\binary_value_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\browser_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\browser_host_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\command_line_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\context_menu_params_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\cookie_manager_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\dictionary_value_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\domdocument_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\domnode_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\download_item_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\download_item_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\drag_data_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\file_dialog_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\frame_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\geolocation_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\jsdialog_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\list_value_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\menu_model_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\navigation_entry_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\post_data_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\post_data_element_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\print_dialog_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\print_job_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\print_settings_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\process_message_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\request_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\request_context_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\request_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\resource_bundle_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\response_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\run_context_menu_callback_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\scheme_registrar_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\sslcert_principal_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\sslinfo_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\stream_reader_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\stream_writer_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\task_runner_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\urlrequest_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8context_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8exception_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8stack_frame_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8stack_trace_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\v8value_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\value_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\web_plugin_info_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\xml_reader_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\ctocpp\zip_reader_ctocpp.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\cef_byte_read_handler.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\cef_closure_task.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\cef_message_router.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\cef_resource_manager.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\cef_stream_resource_handler.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\cef_xml_object.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\cef_zip_archive.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\libcef_dll_wrapper.cc" />
-    <ClCompile Include="C:\Users\fuyanzhi\Desktop\cef_binary_3.2526.1366.g8617e7c_windows32\libcef_dll\wrapper\libcef_dll_wrapper2.cc" />
+    <ClInclude Include="wrapper\cef_browser_info_map.h" />
+    <ClCompile Include="transfer_util.cc" />
+    <ClCompile Include="base\cef_atomicops_x86_gcc.cc" />
+    <ClCompile Include="base\cef_bind_helpers.cc" />
+    <ClCompile Include="base\cef_callback_helpers.cc" />
+    <ClCompile Include="base\cef_callback_internal.cc" />
+    <ClCompile Include="base\cef_lock.cc" />
+    <ClCompile Include="base\cef_lock_impl.cc" />
+    <ClCompile Include="base\cef_logging.cc" />
+    <ClCompile Include="base\cef_ref_counted.cc" />
+    <ClCompile Include="base\cef_string16.cc" />
+    <ClCompile Include="base\cef_thread_checker_impl.cc" />
+    <ClCompile Include="base\cef_thread_collision_warner.cc" />
+    <ClCompile Include="base\cef_weak_ptr.cc" />
+    <ClCompile Include="cpptoc\app_cpptoc.cc" />
+    <ClCompile Include="cpptoc\base_cpptoc.cc" />
+    <ClCompile Include="cpptoc\browser_process_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\client_cpptoc.cc" />
+    <ClCompile Include="cpptoc\completion_callback_cpptoc.cc" />
+    <ClCompile Include="cpptoc\context_menu_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\cookie_visitor_cpptoc.cc" />
+    <ClCompile Include="cpptoc\delete_cookies_callback_cpptoc.cc" />
+    <ClCompile Include="cpptoc\dialog_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\display_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\domvisitor_cpptoc.cc" />
+    <ClCompile Include="cpptoc\download_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\drag_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\end_tracing_callback_cpptoc.cc" />
+    <ClCompile Include="cpptoc\find_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\focus_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\geolocation_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\get_geolocation_callback_cpptoc.cc" />
+    <ClCompile Include="cpptoc\jsdialog_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\keyboard_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\life_span_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\load_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\navigation_entry_visitor_cpptoc.cc" />
+    <ClCompile Include="cpptoc\pdf_print_callback_cpptoc.cc" />
+    <ClCompile Include="cpptoc\print_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\read_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\render_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\render_process_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\request_context_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\request_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\resource_bundle_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\resource_handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\response_filter_cpptoc.cc" />
+    <ClCompile Include="cpptoc\run_file_dialog_callback_cpptoc.cc" />
+    <ClCompile Include="cpptoc\scheme_handler_factory_cpptoc.cc" />
+    <ClCompile Include="cpptoc\set_cookie_callback_cpptoc.cc" />
+    <ClCompile Include="cpptoc\string_visitor_cpptoc.cc" />
+    <ClCompile Include="cpptoc\task_cpptoc.cc" />
+    <ClCompile Include="cpptoc\urlrequest_client_cpptoc.cc" />
+    <ClCompile Include="cpptoc\v8accessor_cpptoc.cc" />
+    <ClCompile Include="cpptoc\v8handler_cpptoc.cc" />
+    <ClCompile Include="cpptoc\web_plugin_info_visitor_cpptoc.cc" />
+    <ClCompile Include="cpptoc\web_plugin_unstable_callback_cpptoc.cc" />
+    <ClCompile Include="cpptoc\write_handler_cpptoc.cc" />
+    <ClCompile Include="ctocpp\auth_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\before_download_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\binary_value_ctocpp.cc" />
+    <ClCompile Include="ctocpp\browser_ctocpp.cc" />
+    <ClCompile Include="ctocpp\browser_host_ctocpp.cc" />
+    <ClCompile Include="ctocpp\callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\command_line_ctocpp.cc" />
+    <ClCompile Include="ctocpp\context_menu_params_ctocpp.cc" />
+    <ClCompile Include="ctocpp\cookie_manager_ctocpp.cc" />
+    <ClCompile Include="ctocpp\dictionary_value_ctocpp.cc" />
+    <ClCompile Include="ctocpp\domdocument_ctocpp.cc" />
+    <ClCompile Include="ctocpp\domnode_ctocpp.cc" />
+    <ClCompile Include="ctocpp\download_item_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\download_item_ctocpp.cc" />
+    <ClCompile Include="ctocpp\drag_data_ctocpp.cc" />
+    <ClCompile Include="ctocpp\file_dialog_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\frame_ctocpp.cc" />
+    <ClCompile Include="ctocpp\geolocation_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\jsdialog_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\list_value_ctocpp.cc" />
+    <ClCompile Include="ctocpp\menu_model_ctocpp.cc" />
+    <ClCompile Include="ctocpp\navigation_entry_ctocpp.cc" />
+    <ClCompile Include="ctocpp\post_data_ctocpp.cc" />
+    <ClCompile Include="ctocpp\post_data_element_ctocpp.cc" />
+    <ClCompile Include="ctocpp\print_dialog_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\print_job_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\print_settings_ctocpp.cc" />
+    <ClCompile Include="ctocpp\process_message_ctocpp.cc" />
+    <ClCompile Include="ctocpp\request_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\request_context_ctocpp.cc" />
+    <ClCompile Include="ctocpp\request_ctocpp.cc" />
+    <ClCompile Include="ctocpp\resource_bundle_ctocpp.cc" />
+    <ClCompile Include="ctocpp\response_ctocpp.cc" />
+    <ClCompile Include="ctocpp\run_context_menu_callback_ctocpp.cc" />
+    <ClCompile Include="ctocpp\scheme_registrar_ctocpp.cc" />
+    <ClCompile Include="ctocpp\sslcert_principal_ctocpp.cc" />
+    <ClCompile Include="ctocpp\sslinfo_ctocpp.cc" />
+    <ClCompile Include="ctocpp\stream_reader_ctocpp.cc" />
+    <ClCompile Include="ctocpp\stream_writer_ctocpp.cc" />
+    <ClCompile Include="ctocpp\task_runner_ctocpp.cc" />
+    <ClCompile Include="ctocpp\urlrequest_ctocpp.cc" />
+    <ClCompile Include="ctocpp\v8context_ctocpp.cc" />
+    <ClCompile Include="ctocpp\v8exception_ctocpp.cc" />
+    <ClCompile Include="ctocpp\v8stack_frame_ctocpp.cc" />
+    <ClCompile Include="ctocpp\v8stack_trace_ctocpp.cc" />
+    <ClCompile Include="ctocpp\v8value_ctocpp.cc" />
+    <ClCompile Include="ctocpp\value_ctocpp.cc" />
+    <ClCompile Include="ctocpp\web_plugin_info_ctocpp.cc" />
+    <ClCompile Include="ctocpp\xml_reader_ctocpp.cc" />
+    <ClCompile Include="ctocpp\zip_reader_ctocpp.cc" />
+    <ClCompile Include="wrapper\cef_byte_read_handler.cc" />
+    <ClCompile Include="wrapper\cef_closure_task.cc" />
+    <ClCompile Include="wrapper\cef_message_router.cc" />
+    <ClCompile Include="wrapper\cef_resource_manager.cc" />
+    <ClCompile Include="wrapper\cef_stream_resource_handler.cc" />
+    <ClCompile Include="wrapper\cef_xml_object.cc" />
+    <ClCompile Include="wrapper\cef_zip_archive.cc" />
+    <ClCompile Include="wrapper\libcef_dll_wrapper.cc" />
+    <ClCompile Include="wrapper\libcef_dll_wrapper2.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/fuyanzhi/Desktop/cef_binary_3.2526.1366.g8617e7c_windows32/libcef_dll/ZERO_CHECK.vcxproj">
+    <ProjectReference Include="ZERO_CHECK.vcxproj">
       <Project>B775A93C-374B-3D85-94EB-03EC6889700F</Project>
     </ProjectReference>
   </ItemGroup>
