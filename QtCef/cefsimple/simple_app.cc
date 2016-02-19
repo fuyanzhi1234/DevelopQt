@@ -46,12 +46,29 @@ void SimpleApp::OnContextInitialized() {
   CefRefPtr<CefCommandLine> command_line =
       CefCommandLine::GetGlobalCommandLine();
   url = command_line->GetSwitchValue("url");
+
   if (url.empty())
     url = "http://www.baidu.com";
 
   // Create the first browser window.
-  CefBrowserHost::CreateBrowser(window_info, SimpleHandler::GetInstance(), url,
-                                browser_settings, NULL);
+//   CefBrowserHost::CreateBrowser(window_info, SimpleHandler::GetInstance(), url,
+//                                 browser_settings, NULL);
 
 //   CefRefPtr<CefBrowser> browser = CefBrowserHost::get
+}
+
+void SimpleApp::OnBeforeCommandLineProcessing(
+	const CefString& process_type,
+	CefRefPtr<CefCommandLine> command_line) {
+	if (process_type.empty())
+	{
+		// 这种方法应该也可以，但可能我这个机器的ppapi_flash有问题，需要进一步验证
+// 		command_line->AppendSwitch("--enable-system-flash");  //Enable Flash
+		// 这是第二种方法，需要把pepflashplayer.dll打进安装包中
+		command_line->AppendSwitchWithValue("ppapi-flash-path", "plugins\\pepflashplayer.dll");
+// 		command_line->AppendArgument("ppapi-flash-path=plugins\\pepflashplayer.dll");
+
+		// OffScreenRenderingEnabled 查一下，这个是什么意思
+// 		command_line->AppendSwitch("enable-begin-frame-scheduling");
+	}
 }

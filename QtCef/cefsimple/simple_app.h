@@ -10,11 +10,15 @@
 class SimpleApp : public CefApp,
                   public CefBrowserProcessHandler {
  public:
-  SimpleApp(HWND hParent);
+  SimpleApp(HWND hParent = NULL);
 
   // CefApp methods:
   virtual CefRefPtr<CefBrowserProcessHandler> GetBrowserProcessHandler()
       OVERRIDE { return this; }
+
+  virtual void OnBeforeCommandLineProcessing(
+	  const CefString& process_type,
+	  CefRefPtr<CefCommandLine> command_line);
 
   // CefBrowserProcessHandler methods:
   virtual void OnContextInitialized() OVERRIDE;

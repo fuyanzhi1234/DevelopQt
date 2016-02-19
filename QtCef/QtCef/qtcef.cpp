@@ -10,51 +10,32 @@ QtCef::QtCef(QWidget *parent)
 {
 	ui.setupUi(this);
 
-	// Enable High-DPI support on Windows 7 or newer.
-	CefEnableHighDPISupport();
+	// Information used when creating the native window.
+	CefWindowInfo window_info;
 
-	void* sandbox_info = NULL;
-
-#if defined(CEF_USE_SANDBOX)
-	// Manage the life span of the sandbox information object. This is necessary
-	// for sandbox support on Windows. See cef_sandbox_win.h for complete details.
-	CefScopedSandboxInfo scoped_sandbox;
-	sandbox_info = scoped_sandbox.sandbox_info();
+#if defined(OS_WIN)
+	// On Windows we need to specify certain flags that will be passed to
+	// CreateWindowEx().
+	//   window_info.SetAsPopup(NULL, "cefsimple");
+	RECT rect;
+	rect.left = 0;
+	rect.top = 0;
+	rect.right = 1000;
+	rect.bottom = 500;
+	window_info.SetAsChild((HWND)this->winId(), rect);
 #endif
 
-	HINSTANCE hInstance = (HINSTANCE)GetModuleHandle(NULL);
+	// SimpleHandler implements browser-level callbacks.
+	//   CefRefPtr<SimpleHandler> handler(new SimpleHandler());
 
-	// Provide CEF with command-line arguments.
-	CefMainArgs main_args(hInstance);
+	// Specify CEF browser settings here.
+	CefBrowserSettings browser_settings;
 
-	// SimpleApp implements application-level callbacks. It will create the first
-	// browser instance in OnContextInitialized() after CEF has initialized.
-	CefRefPtr<SimpleApp> app(new SimpleApp((HWND)this->winId()));
+	std::string url = "http://www.baidu.com";
 
-	// CEF applications have multiple sub-processes (render, plugin, GPU, etc)
-	// that share the same executable. This function checks the command-line and,
-	// if this is a sub-process, executes the appropriate logic.
-	int exit_code = CefExecuteProcess(main_args, app.get(), sandbox_info);
-	if (exit_code >= 0) {
-		// The sub-process has completed so return here.
-		return;
-	}
-
-	// Specify CEF global settings here.
-	CefSettings settings;
-
-#if !defined(CEF_USE_SANDBOX)
-	settings.no_sandbox = true;
-#endif
-	settings.multi_threaded_message_loop = true;
-	settings.single_process = true;
-	// Initialize CEF.
-	CefInitialize(main_args, settings, app.get(), sandbox_info);
-
-	// Run the CEF message loop. This will block until CefQuitMessageLoop() is
-	// called.
-// 	CefRunMessageLoop();
-
+	// Create the first browser window.
+	CefBrowserHost::CreateBrowser(window_info, SimpleHandler::GetInstance(), url,
+		browser_settings, NULL);
 	connect(ui.pushButton_zoom_in, SIGNAL(clicked()), SLOT(OnZoomIn()));
 	connect(ui.pushButton_zoom_out, SIGNAL(clicked()), SLOT(OnZoomOut()));
 	connect(ui.pushButton_newwin, SIGNAL(clicked()), SLOT(OnNewWin()));

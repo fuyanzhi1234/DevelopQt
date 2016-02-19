@@ -47,10 +47,32 @@ SimpleHandler* SimpleHandler::GetInstance() {
   return g_instance;
 }
 
+// CefLifeSpanHandler methods:
+bool SimpleHandler::OnBeforePopup(
+	CefRefPtr<CefBrowser> browser,
+	CefRefPtr<CefFrame> frame,
+	const CefString& target_url,
+	const CefString& target_frame_name,
+	CefLifeSpanHandler::WindowOpenDisposition target_disposition,
+	bool user_gesture,
+	const CefPopupFeatures& popupFeatures,
+	CefWindowInfo& windowInfo,
+	CefRefPtr<CefClient>& client,
+	CefBrowserSettings& settings,
+	bool* no_javascript_access) {
+	CEF_REQUIRE_IO_THREAD();
+
+	browser->GetMainFrame()->LoadURL(target_url);
+
+	// Return true to cancel the popup window.
+	return true;
+}
+
 void SimpleHandler::OnAfterCreated(CefRefPtr<CefBrowser> browser) {
   CEF_REQUIRE_UI_THREAD();
 
-  browser->GetHost()->SetMouseCursorChangeDisabled(true);
+  // 可以控制鼠标形状是否可以改变
+//   browser->GetHost()->SetMouseCursorChangeDisabled(true);
   // Add to the list of existing browsers.
   browser_list_.push_back(browser);
 }
@@ -144,6 +166,53 @@ bool SimpleHandler::OnContextMenuCommand(CefRefPtr<CefBrowser> browser,
 	EventFlags event_flags)
 {
 	return true;
+}
+
+bool SimpleHandler::OnCertificateError(
+	CefRefPtr<CefBrowser> browser,
+	ErrorCode cert_error,
+	const CefString& request_url,
+	CefRefPtr<CefSSLInfo> ssl_info,
+	CefRefPtr<CefRequestCallback> callback) {
+	CEF_REQUIRE_UI_THREAD();
+
+	CefRefPtr<CefSSLCertPrincipal> subject = ssl_info->GetSubject();
+	CefRefPtr<CefSSLCertPrincipal> issuer = ssl_info->GetIssuer();
+
+	return false;  // Cancel the request.
+}
+
+// 只有在多进程模式下，此函数才会响应
+void SimpleHandler::OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
+	TerminationStatus status) {
+	CEF_REQUIRE_UI_THREAD();
+
+// 	message_router_->OnRenderProcessTerminated(browser);
+
+	// Don't reload if there's no start URL, or if the crash URL was specified.
+// 	if (startup_url_.empty() || startup_url_ == "chrome://crash")
+// 		return;
+
+	CefRefPtr<CefFrame> frame = browser->GetMainFrame();
+	std::string url = frame->GetURL();
+
+	// Don't reload if the termination occurred before any URL had successfully
+	// loaded.
+	if (url.empty())
+		return;
+
+// 	std::string start_url = startup_url_;
+
+	// Convert URLs to lowercase for easier comparison.
+// 	std::transform(url.begin(), url.end(), url.begin(), tolower);
+// 	std::transform(start_url.begin(), start_url.end(), start_url.begin(),
+// 		tolower);
+
+	// Don't reload the URL that just resulted in termination.
+// 	if (url.find(start_url) == 0)
+// 		return;
+
+	frame->LoadURL("www.baidu.com");
 }
 
 void SimpleHandler::setZoom(double delta)

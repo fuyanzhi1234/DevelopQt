@@ -13,7 +13,8 @@ class SimpleHandler : public CefClient,
 						public CefContextMenuHandler,
 						public CefDisplayHandler,
 						public CefLifeSpanHandler,
-						public CefLoadHandler {
+						public CefLoadHandler,
+						public CefRequestHandler {
  public:
   SimpleHandler();
   ~SimpleHandler();
@@ -34,12 +35,27 @@ class SimpleHandler : public CefClient,
   virtual CefRefPtr<CefLoadHandler> GetLoadHandler() OVERRIDE {
     return this;
   }
+  virtual CefRefPtr<CefRequestHandler> GetRequestHandler() OVERRIDE{
+	  return this;
+  }
 
   // CefDisplayHandler methods:
   virtual void OnTitleChange(CefRefPtr<CefBrowser> browser,
                              const CefString& title) OVERRIDE;
 
   // CefLifeSpanHandler methods:
+  virtual bool OnBeforePopup(
+	  CefRefPtr<CefBrowser> browser,
+	  CefRefPtr<CefFrame> frame,
+	  const CefString& target_url,
+	  const CefString& target_frame_name,
+	  CefLifeSpanHandler::WindowOpenDisposition target_disposition,
+	  bool user_gesture,
+	  const CefPopupFeatures& popupFeatures,
+	  CefWindowInfo& windowInfo,
+	  CefRefPtr<CefClient>& client,
+	  CefBrowserSettings& settings,
+	  bool* no_javascript_access) OVERRIDE;
   virtual void OnAfterCreated(CefRefPtr<CefBrowser> browser) OVERRIDE;
   virtual bool DoClose(CefRefPtr<CefBrowser> browser) OVERRIDE;
   virtual void OnBeforeClose(CefRefPtr<CefBrowser> browser) OVERRIDE;
@@ -66,6 +82,16 @@ class SimpleHandler : public CefClient,
 	  CefRefPtr<CefContextMenuParams> params,
 	  int command_id,
 	  EventFlags event_flags) OVERRIDE;
+
+  // CefRequestHandler methods
+  bool OnCertificateError(
+	  CefRefPtr<CefBrowser> browser,
+	  ErrorCode cert_error,
+	  const CefString& request_url,
+	  CefRefPtr<CefSSLInfo> ssl_info,
+	  CefRefPtr<CefRequestCallback> callback) OVERRIDE;
+  void OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
+	  TerminationStatus status) OVERRIDE;
 
 
 public:
