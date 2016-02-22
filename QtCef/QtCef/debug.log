@@ -956,3 +956,734 @@ Backtrace:
 [0222/142644:WARNING:channel.cc(315)] RawChannel write error
 [0222/142644:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
 [0222/142645:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/144614:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/145710:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/145710:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/151037:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/151039:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/151039:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/151039:WARNING:channel.cc(315)] RawChannel write error
+[0222/151039:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/151132:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/151136:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/161100:ERROR:render_process_impl.cc(69)] WebFrame LEAKED 1 TIMES
+[0222/161101:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x10C7D031+9586241]
+	IsSandboxedProcess [0x16A885C7+845911]
+	SetCrashKeyValueImpl [0x152C05B4+35371860]
+	cef_string_list_value [0x102B5AAF+159951]
+	cef_string_list_value [0x102B4F77+157079]
+	cef_initialize [0x101EAC58+504]
+	CefInitialize [0x0096F980+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00960FE3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x00A0931D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x00A0759F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x00A0735D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/161102:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x10C7D031+9586241]
+	IsSandboxedProcess [0x16A885C7+845911]
+	SetCrashKeyValueImpl [0x152C05B4+35371860]
+	cef_string_list_value [0x102B5AAF+159951]
+	cef_string_list_value [0x102B4F77+157079]
+	cef_initialize [0x101EAC58+504]
+	CefInitialize [0x0096F980+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00960FE3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x00A0931D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x00A0759F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x00A0735D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/161805:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/161807:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/161807:FATAL:url_request.cc(851)] Check failed: job_->NeedsAuth(). 
+Backtrace:
+	cef_time_to_timet [0x10D5EE21+2909233]
+	cef_time_to_timet [0x10C818FF+2002703]
+	cef_time_to_timet [0x132141E6+41400310]
+	SetCrashKeyValueImpl [0x141313D1+9357681]
+	cef_time_to_timet [0x13216A43+41410643]
+	cef_time_to_timet [0x1321689D+41410221]
+	cef_time_to_timet [0x1331A885+42475157]
+	cef_time_to_timet [0x132F2812+42311202]
+	cef_time_to_timet [0x132F57C9+42323417]
+	cef_time_to_timet [0x132F546D+42322557]
+	cef_time_to_timet [0x132F2F7E+42313102]
+	cef_time_to_timet [0x132F50D0+42321632]
+	cef_time_to_timet [0x132F1E37+42308679]
+	cef_time_to_timet [0x132F4E59+42321001]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x1346867E+43842702]
+	cef_time_to_timet [0x13478A11+43909153]
+	cef_time_to_timet [0x13473F92+43890082]
+	cef_time_to_timet [0x134787EC+43908604]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x1346EACF+43868383]
+	cef_time_to_timet [0x13473A74+43888772]
+	cef_time_to_timet [0x13470628+43875384]
+	cef_time_to_timet [0x13474DDD+43893741]
+	cef_time_to_timet [0x13478BFA+43909642]
+	cef_time_to_timet [0x13473E8F+43889823]
+	cef_time_to_timet [0x13478953+43908963]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x13637083+45737619]
+	cef_time_to_timet [0x1363AE58+45753448]
+	cef_time_to_timet [0x1363D0D0+45762272]
+	cef_time_to_timet [0x1363A797+45751719]
+	cef_time_to_timet [0x1363CF39+45761865]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x13812FDE+47687150]
+	cef_time_to_timet [0x13813ABA+47689930]
+	cef_time_to_timet [0x13812DCF+47686623]
+	cef_time_to_timet [0x138139F3+47689731]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x134BB0CE+44181214]
+	cef_time_to_timet [0x134BC037+44185159]
+	cef_time_to_timet [0x134BBBC4+44184020]
+	cef_time_to_timet [0x134BBF8E+44184990]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x134B67B9+44162505]
+	cef_time_to_timet [0x134B82D6+44169446]
+	cef_time_to_timet [0x10DB8A8C+3276956]
+	cef_time_to_timet [0x10DB8A2A+3276858]
+	cef_time_to_timet [0x10DB896F+3276671]
+	cef_time_to_timet [0x10DB89EF+3276799]
+	cef_trace_event_instant [0x109FC8DF+8703]
+	cef_time_to_timet [0x10D97FFB+3143179]
+	cef_time_to_timet [0x10CAC4F8+2177800]
+	cef_time_to_timet [0x10CAA7C4+2170324]
+	cef_time_to_timet [0x10CAADAD+2171837]
+	cef_time_to_timet [0x10D9BD62+3158898]
+	cef_time_to_timet [0x10D9D852+3165794]
+	cef_time_to_timet [0x10D9D7BC+3165644]
+	cef_time_to_timet [0x10CAC307+2177303]
+	cef_time_to_timet [0x10D1B006+2631190]
+	cef_time_to_timet [0x10CAC1BB+2176971]
+	cef_time_to_timet [0x10D1C666+2636918]
+
+[0222/161823:INFO:child_thread_impl.cc(725)] ChildThreadImpl::EnsureConnected()
+[0222/161835:FATAL:url_request_http_job.cc(1174)] Check failed: server_auth_state_ == AUTH_STATE_NEED_AUTH (2 vs. 1)
+Backtrace:
+	cef_time_to_timet [0x10D5EE21+2909233]
+	cef_time_to_timet [0x10C818FF+2002703]
+	cef_time_to_timet [0x132EF1BD+42297293]
+	cef_time_to_timet [0x1321420C+41400348]
+	SetCrashKeyValueImpl [0x141313D1+9357681]
+	cef_time_to_timet [0x13216A43+41410643]
+	cef_time_to_timet [0x1321689D+41410221]
+	cef_time_to_timet [0x1331A885+42475157]
+	cef_time_to_timet [0x132F2812+42311202]
+	cef_time_to_timet [0x132F57C9+42323417]
+	cef_time_to_timet [0x132F546D+42322557]
+	cef_time_to_timet [0x132F2F7E+42313102]
+	cef_time_to_timet [0x132F50D0+42321632]
+	cef_time_to_timet [0x132F1E37+42308679]
+	cef_time_to_timet [0x132F4E59+42321001]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x1346867E+43842702]
+	cef_time_to_timet [0x13478A11+43909153]
+	cef_time_to_timet [0x13473F92+43890082]
+	cef_time_to_timet [0x134787EC+43908604]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x1346EACF+43868383]
+	cef_time_to_timet [0x13473A74+43888772]
+	cef_time_to_timet [0x13470628+43875384]
+	cef_time_to_timet [0x13474DDD+43893741]
+	cef_time_to_timet [0x13478BFA+43909642]
+	cef_time_to_timet [0x13473E8F+43889823]
+	cef_time_to_timet [0x13478953+43908963]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x13637083+45737619]
+	cef_time_to_timet [0x1363AE58+45753448]
+	cef_time_to_timet [0x1363D0D0+45762272]
+	cef_time_to_timet [0x1363A797+45751719]
+	cef_time_to_timet [0x1363CF39+45761865]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x13812FDE+47687150]
+	cef_time_to_timet [0x13813ABA+47689930]
+	cef_time_to_timet [0x13812DCF+47686623]
+	cef_time_to_timet [0x138139F3+47689731]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x134BB0CE+44181214]
+	cef_time_to_timet [0x134BC037+44185159]
+	cef_time_to_timet [0x134BBBC4+44184020]
+	cef_time_to_timet [0x134BBF8E+44184990]
+	cef_time_to_timet [0x10B6F90C+880412]
+	cef_time_to_timet [0x134B67B9+44162505]
+	cef_time_to_timet [0x134B82D6+44169446]
+	cef_time_to_timet [0x10DB8A8C+3276956]
+	cef_time_to_timet [0x10DB8A2A+3276858]
+	cef_time_to_timet [0x10DB896F+3276671]
+	cef_time_to_timet [0x10DB89EF+3276799]
+	cef_trace_event_instant [0x109FC8DF+8703]
+	cef_time_to_timet [0x10D97FFB+3143179]
+	cef_time_to_timet [0x10CAC4F8+2177800]
+	cef_time_to_timet [0x10CAA7C4+2170324]
+	cef_time_to_timet [0x10CAADAD+2171837]
+	cef_time_to_timet [0x10D9BD62+3158898]
+	cef_time_to_timet [0x10D9D852+3165794]
+	cef_time_to_timet [0x10D9D7BC+3165644]
+	cef_time_to_timet [0x10CAC307+2177303]
+	cef_time_to_timet [0x10D1B006+2631190]
+	cef_time_to_timet [0x10CAC1BB+2176971]
+
+[0222/161921:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/161947:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/161947:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/162002:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/162023:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/162052:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/162422:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/164608:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/164609:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/164613:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/164630:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/164653:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/164705:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/164705:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/164705:WARNING:channel.cc(315)] RawChannel write error
+[0222/164705:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/172400:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/172449:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172449:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172503:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/172528:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172529:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172537:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/172549:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172549:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172608:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/172624:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172632:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/172658:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172658:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172724:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/172740:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172740:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/172820:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/172821:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/172838:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/172838:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/172838:WARNING:channel.cc(315)] RawChannel write error
+[0222/172838:FATAL:browser_main.cc(153)] Check failed: 0 == CefBrowserContext::DebugObjCt (0 vs. 1)
+Backtrace:
+	cef_time_to_timet [0x106CEE21+2909233]
+	cef_time_to_timet [0x105F18FF+2002703]
+	cef_time_to_timet [0x10503481+1026705]
+	SetCrashKeyValueImpl [0x13799D10+6181552]
+	SetCrashKeyValueImpl [0x136FA9B5+5529429]
+	cef_time_to_timet [0x10445895+249509]
+	cef_time_to_timet [0x1068D155+2639717]
+	cef_time_to_timet [0x1061398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/172844:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x106CEE21+2909233]
+	cef_time_to_timet [0x105F18FF+2002703]
+	cef_time_to_timet [0x10D2D031+9586241]
+	IsSandboxedProcess [0x16B385C7+845911]
+	SetCrashKeyValueImpl [0x153705B4+35371860]
+	cef_string_list_value [0x10365AAF+159951]
+	cef_string_list_value [0x10364F77+157079]
+	cef_initialize [0x1029AC58+504]
+	CefInitialize [0x014000C0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x013F16B3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x01499A5D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x01497CDF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x01497A9D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/172901:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/172901:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/172919:FATAL:context.cc(293)] Check failed: OnInitThread(). 
+Backtrace:
+	cef_time_to_timet [0x10F2EE21+2909233]
+	cef_time_to_timet [0x10E518FF+2002703]
+	cef_string_list_value [0x10BC643C+162396]
+	cef_string_list_value [0x10BC44EE+154382]
+	IsSandboxedProcess [0x17B93F2D+9216445]
+	SetCrashKeyValueImpl [0x1620D6A0+41913408]
+	SetCrashKeyValueImpl [0x1620D45F+41912831]
+	SetCrashKeyValueImpl [0x16202A21+41869249]
+	SetCrashKeyValueImpl [0x16202963+41869059]
+	RtlQueryEnvironmentVariable [0x772792E0+577]
+	LdrShutdownProcess [0x77299DA4+321]
+	RtlExitUserProcess [0x77299C46+116]
+	ExitProcess [0x76B179DD+21]
+	operator new[] [0x0F37E619+1129]
+	initterm_e [0x0F37EE79+681]
+	exit [0x0F37E8F0+16]
+	raise [0x0F45F71A+474]
+	CrtSetReportHookW2 [0x0F4599C4+2020]
+	VCrtDbgReportW [0x0F461D95+2341]
+	CrtDbgReportW [0x0F4591D4+116]
+	CrtDbgReportW [0x0F45918D+45]
+	QVector<QXmlStreamAttribute>::removeOne [0x66C66C57+370936]
+	QVector<QXmlStreamAttribute>::removeOne [0x66C6598D+366126]
+	QVector<QXmlStreamAttribute>::removeOne [0x66C5C7A8+328777]
+	QGraphicsItem::mapToItem [0x641F2F36+529695]
+	QGraphicsItem::mapToItem [0x641F219B+526212]
+	QGraphicsItem::mapToItem [0x6443FD88+2941809]
+	QGraphicsItem::mapToItem [0x6446ADA7+3117968]
+	QGraphicsItem::mapToItem [0x6446AA1B+3117060]
+	SimpleHandler::GetAuthCredentials [0x013846DD+141] (e:\gitroom\developqt\qtcef\cefsimple\simple_handler.cc:197)
+	request_handler_get_auth_credentials [0x013FAAB2+1458] (e:\gitroom\developqt\qtcef\libcef_dll\cpptoc\request_handler_cpptoc.cc:277)
+	create_context_shared [0x10B709FB+4603]
+	cef_time_to_timet [0x10DCA3C5+1448405]
+	cef_time_to_timet [0x1350AB9F+42607023]
+	cef_time_to_timet [0x133E687E+41410190]
+	cef_time_to_timet [0x134EA885+42475157]
+	cef_time_to_timet [0x134C2812+42311202]
+	cef_time_to_timet [0x134C57C9+42323417]
+	cef_time_to_timet [0x134C546D+42322557]
+	cef_time_to_timet [0x134C2F7E+42313102]
+	cef_time_to_timet [0x134C50D0+42321632]
+	cef_time_to_timet [0x134C1E37+42308679]
+	cef_time_to_timet [0x134C4E59+42321001]
+	cef_time_to_timet [0x10D3F90C+880412]
+	cef_time_to_timet [0x1363867E+43842702]
+	cef_time_to_timet [0x13648A11+43909153]
+	cef_time_to_timet [0x13643F92+43890082]
+	cef_time_to_timet [0x136487EC+43908604]
+	cef_time_to_timet [0x10D3F90C+880412]
+	cef_time_to_timet [0x1363EACF+43868383]
+	cef_time_to_timet [0x13643A74+43888772]
+	cef_time_to_timet [0x13640628+43875384]
+	cef_time_to_timet [0x13644DDD+43893741]
+	cef_time_to_timet [0x13648BFA+43909642]
+	cef_time_to_timet [0x13643E8F+43889823]
+	cef_time_to_timet [0x13648953+43908963]
+	cef_time_to_timet [0x10D3F90C+880412]
+	cef_time_to_timet [0x13807083+45737619]
+	cef_time_to_timet [0x1380AE58+45753448]
+	cef_time_to_timet [0x1380D0D0+45762272]
+	cef_time_to_timet [0x1380A797+45751719]
+	cef_time_to_timet [0x1380CF39+45761865]
+
+[0222/172930:ERROR:render_process_impl.cc(69)] WebFrame LEAKED 1 TIMES
+[0222/172930:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10F2EE21+2909233]
+	cef_time_to_timet [0x10E518FF+2002703]
+	cef_time_to_timet [0x1158D031+9586241]
+	IsSandboxedProcess [0x173985C7+845911]
+	SetCrashKeyValueImpl [0x15BD05B4+35371860]
+	cef_string_list_value [0x10BC5AAF+159951]
+	cef_string_list_value [0x10BC4F77+157079]
+	cef_initialize [0x10AFAC58+504]
+	CefInitialize [0x013A00C0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x013916B3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x01439A5D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x01437CDF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x01437A9D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/172930:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10F2EE21+2909233]
+	cef_time_to_timet [0x10E518FF+2002703]
+	cef_time_to_timet [0x1158D031+9586241]
+	IsSandboxedProcess [0x173985C7+845911]
+	SetCrashKeyValueImpl [0x15BD05B4+35371860]
+	cef_string_list_value [0x10BC5AAF+159951]
+	cef_string_list_value [0x10BC4F77+157079]
+	cef_initialize [0x10AFAC58+504]
+	CefInitialize [0x013A00C0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x013916B3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x01439A5D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x01437CDF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x01437A9D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/173400:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/173400:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/173411:FATAL:browser_main.cc(153)] Check failed: 0 == CefBrowserContext::DebugObjCt (0 vs. 1)
+Backtrace:
+	cef_time_to_timet [0x10D1EE21+2909233]
+	cef_time_to_timet [0x10C418FF+2002703]
+	cef_time_to_timet [0x10B53481+1026705]
+	SetCrashKeyValueImpl [0x13DE9D10+6181552]
+	SetCrashKeyValueImpl [0x13D4A9B5+5529429]
+	cef_time_to_timet [0x10A95895+249509]
+	cef_time_to_timet [0x10CDD155+2639717]
+	cef_time_to_timet [0x10C6398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/173415:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10D1EE21+2909233]
+	cef_time_to_timet [0x10C418FF+2002703]
+	cef_time_to_timet [0x1137D031+9586241]
+	IsSandboxedProcess [0x171885C7+845911]
+	SetCrashKeyValueImpl [0x159C05B4+35371860]
+	cef_string_list_value [0x109B5AAF+159951]
+	cef_string_list_value [0x109B4F77+157079]
+	cef_initialize [0x108EAC58+504]
+	CefInitialize [0x00D700C0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00D616B3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x00E09A5D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x00E07CDF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x00E07A9D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174240:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/174240:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/174251:FATAL:auth_callback_ctocpp.cc(26)] Check failed: !username.empty(). 
+
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_log [0x102B7A92+82]
+	cef::logging::LogMessage::~LogMessage [0x012F6879+153] (e:\gitroom\developqt\qtcef\libcef_dll\base\cef_logging.cc:176)
+	CefAuthCallbackCToCpp::Continue [0x01369F19+281] (e:\gitroom\developqt\qtcef\libcef_dll\ctocpp\auth_callback_ctocpp.cc:27)
+	SimpleHandler::GetAuthCredentials [0x012E4738+216] (e:\gitroom\developqt\qtcef\cefsimple\simple_handler.cc:197)
+	request_handler_get_auth_credentials [0x0135AD72+1458] (e:\gitroom\developqt\qtcef\libcef_dll\cpptoc\request_handler_cpptoc.cc:277)
+	create_context_shared [0x102609FB+4603]
+	cef_time_to_timet [0x104BA3C5+1448405]
+	cef_time_to_timet [0x12BFAB9F+42607023]
+	cef_time_to_timet [0x12AD687E+41410190]
+	cef_time_to_timet [0x12BDA885+42475157]
+	cef_time_to_timet [0x12BB2812+42311202]
+	cef_time_to_timet [0x12BB57C9+42323417]
+	cef_time_to_timet [0x12BB546D+42322557]
+	cef_time_to_timet [0x12BB2F7E+42313102]
+	cef_time_to_timet [0x12BB50D0+42321632]
+	cef_time_to_timet [0x12BB1E37+42308679]
+	cef_time_to_timet [0x12BB4E59+42321001]
+	cef_time_to_timet [0x1042F90C+880412]
+	cef_time_to_timet [0x12D2867E+43842702]
+	cef_time_to_timet [0x12D38A11+43909153]
+	cef_time_to_timet [0x12D33F92+43890082]
+	cef_time_to_timet [0x12D387EC+43908604]
+	cef_time_to_timet [0x1042F90C+880412]
+	cef_time_to_timet [0x12D2EACF+43868383]
+	cef_time_to_timet [0x12D33A74+43888772]
+	cef_time_to_timet [0x12D30628+43875384]
+	cef_time_to_timet [0x12D34DDD+43893741]
+	cef_time_to_timet [0x12D38BFA+43909642]
+	cef_time_to_timet [0x12D33E8F+43889823]
+	cef_time_to_timet [0x12D38953+43908963]
+	cef_time_to_timet [0x1042F90C+880412]
+	cef_time_to_timet [0x12EF7083+45737619]
+	cef_time_to_timet [0x12EFAE58+45753448]
+	cef_time_to_timet [0x12EFD0D0+45762272]
+	cef_time_to_timet [0x12EFA797+45751719]
+	cef_time_to_timet [0x12EFCF39+45761865]
+	cef_time_to_timet [0x1042F90C+880412]
+	cef_time_to_timet [0x130D2FDE+47687150]
+	cef_time_to_timet [0x130D3ABA+47689930]
+	cef_time_to_timet [0x130D2DCF+47686623]
+	cef_time_to_timet [0x130D39F3+47689731]
+	cef_time_to_timet [0x1042F90C+880412]
+	cef_time_to_timet [0x12D7B0CE+44181214]
+	cef_time_to_timet [0x12D7C037+44185159]
+	cef_time_to_timet [0x12D7BBC4+44184020]
+	cef_time_to_timet [0x12D7BF8E+44184990]
+	cef_time_to_timet [0x1042F90C+880412]
+	cef_time_to_timet [0x12D767B9+44162505]
+	cef_time_to_timet [0x12D782D6+44169446]
+	cef_time_to_timet [0x10678A8C+3276956]
+	cef_time_to_timet [0x10678A2A+3276858]
+	cef_time_to_timet [0x1067896F+3276671]
+	cef_time_to_timet [0x106789EF+3276799]
+	cef_trace_event_instant [0x102BC8DF+8703]
+	cef_time_to_timet [0x10657FFB+3143179]
+	cef_time_to_timet [0x1056C4F8+2177800]
+	cef_time_to_timet [0x1056A7C4+2170324]
+	cef_time_to_timet [0x1056ADAD+2171837]
+	cef_time_to_timet [0x1065BD62+3158898]
+	cef_time_to_timet [0x1065D852+3165794]
+
+[0222/174350:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x10C7D031+9586241]
+	IsSandboxedProcess [0x16A885C7+845911]
+	SetCrashKeyValueImpl [0x152C05B4+35371860]
+	cef_string_list_value [0x102B5AAF+159951]
+	cef_string_list_value [0x102B4F77+157079]
+	cef_initialize [0x101EAC58+504]
+	CefInitialize [0x01300380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x012F18D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x01399D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x01397F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x01397D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174351:ERROR:render_process_impl.cc(69)] WebFrame LEAKED 1 TIMES
+[0222/174351:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x10C7D031+9586241]
+	IsSandboxedProcess [0x16A885C7+845911]
+	SetCrashKeyValueImpl [0x152C05B4+35371860]
+	cef_string_list_value [0x102B5AAF+159951]
+	cef_string_list_value [0x102B4F77+157079]
+	cef_initialize [0x101EAC58+504]
+	CefInitialize [0x01300380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x012F18D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x01399D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x01397F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x01397D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174403:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/174403:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/174524:ERROR:render_process_impl.cc(69)] WebFrame LEAKED 1 TIMES
+[0222/174525:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10B3EE21+2909233]
+	cef_time_to_timet [0x10A618FF+2002703]
+	cef_time_to_timet [0x1119D031+9586241]
+	IsSandboxedProcess [0x16FA85C7+845911]
+	SetCrashKeyValueImpl [0x157E05B4+35371860]
+	cef_string_list_value [0x107D5AAF+159951]
+	cef_string_list_value [0x107D4F77+157079]
+	cef_initialize [0x1070AC58+504]
+	CefInitialize [0x01300380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x012F18D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x01399D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x01397F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x01397D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174525:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10B3EE21+2909233]
+	cef_time_to_timet [0x10A618FF+2002703]
+	cef_time_to_timet [0x1119D031+9586241]
+	IsSandboxedProcess [0x16FA85C7+845911]
+	SetCrashKeyValueImpl [0x157E05B4+35371860]
+	cef_string_list_value [0x107D5AAF+159951]
+	cef_string_list_value [0x107D4F77+157079]
+	cef_initialize [0x1070AC58+504]
+	CefInitialize [0x01300380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x012F18D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x01399D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x01397F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x01397D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174552:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/174552:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/174601:ERROR:render_process_impl.cc(69)] WebFrame LEAKED 1 TIMES
+[0222/174602:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x106CEE21+2909233]
+	cef_time_to_timet [0x105F18FF+2002703]
+	cef_time_to_timet [0x10D2D031+9586241]
+	IsSandboxedProcess [0x16B385C7+845911]
+	SetCrashKeyValueImpl [0x153705B4+35371860]
+	cef_string_list_value [0x10365AAF+159951]
+	cef_string_list_value [0x10364F77+157079]
+	cef_initialize [0x1029AC58+504]
+	CefInitialize [0x00060380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x000518D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x000F9D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x000F7F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x000F7D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174602:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x106CEE21+2909233]
+	cef_time_to_timet [0x105F18FF+2002703]
+	cef_time_to_timet [0x10D2D031+9586241]
+	IsSandboxedProcess [0x16B385C7+845911]
+	SetCrashKeyValueImpl [0x153705B4+35371860]
+	cef_string_list_value [0x10365AAF+159951]
+	cef_string_list_value [0x10364F77+157079]
+	cef_initialize [0x1029AC58+504]
+	CefInitialize [0x00060380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x000518D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x000F9D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x000F7F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x000F7D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174648:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/174648:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/174711:FATAL:auth_callback_ctocpp.cc(26)] Check failed: !username.empty(). 
+
+Backtrace:
+	cef_time_to_timet [0x109BEE21+2909233]
+	cef_time_to_timet [0x108E18FF+2002703]
+	cef_log [0x10657A92+82]
+	cef::logging::LogMessage::~LogMessage [0x00036879+153] (e:\gitroom\developqt\qtcef\libcef_dll\base\cef_logging.cc:176)
+	CefAuthCallbackCToCpp::Continue [0x000A9F19+281] (e:\gitroom\developqt\qtcef\libcef_dll\ctocpp\auth_callback_ctocpp.cc:27)
+	SimpleHandler::GetAuthCredentials [0x00024769+265] (e:\gitroom\developqt\qtcef\cefsimple\simple_handler.cc:197)
+	request_handler_get_auth_credentials [0x0009AD72+1458] (e:\gitroom\developqt\qtcef\libcef_dll\cpptoc\request_handler_cpptoc.cc:277)
+	create_context_shared [0x106009FB+4603]
+	cef_time_to_timet [0x1085A3C5+1448405]
+	cef_time_to_timet [0x12F9AB9F+42607023]
+	cef_time_to_timet [0x12E7687E+41410190]
+	cef_time_to_timet [0x12F7A885+42475157]
+	cef_time_to_timet [0x12F52812+42311202]
+	cef_time_to_timet [0x12F557C9+42323417]
+	cef_time_to_timet [0x12F5546D+42322557]
+	cef_time_to_timet [0x12F52F7E+42313102]
+	cef_time_to_timet [0x12F550D0+42321632]
+	cef_time_to_timet [0x12F51E37+42308679]
+	cef_time_to_timet [0x12F54E59+42321001]
+	cef_time_to_timet [0x107CF90C+880412]
+	cef_time_to_timet [0x130C867E+43842702]
+	cef_time_to_timet [0x130D8A11+43909153]
+	cef_time_to_timet [0x130D3F92+43890082]
+	cef_time_to_timet [0x130D87EC+43908604]
+	cef_time_to_timet [0x107CF90C+880412]
+	cef_time_to_timet [0x130CEACF+43868383]
+	cef_time_to_timet [0x130D3A74+43888772]
+	cef_time_to_timet [0x130D0628+43875384]
+	cef_time_to_timet [0x130D4DDD+43893741]
+	cef_time_to_timet [0x130D8BFA+43909642]
+	cef_time_to_timet [0x130D3E8F+43889823]
+	cef_time_to_timet [0x130D8953+43908963]
+	cef_time_to_timet [0x107CF90C+880412]
+	cef_time_to_timet [0x13297083+45737619]
+	cef_time_to_timet [0x1329AE58+45753448]
+	cef_time_to_timet [0x1329D0D0+45762272]
+	cef_time_to_timet [0x1329A797+45751719]
+	cef_time_to_timet [0x1329CF39+45761865]
+	cef_time_to_timet [0x107CF90C+880412]
+	cef_time_to_timet [0x13472FDE+47687150]
+	cef_time_to_timet [0x13473ABA+47689930]
+	cef_time_to_timet [0x13472DCF+47686623]
+	cef_time_to_timet [0x134739F3+47689731]
+	cef_time_to_timet [0x107CF90C+880412]
+	cef_time_to_timet [0x1311B0CE+44181214]
+	cef_time_to_timet [0x1311C037+44185159]
+	cef_time_to_timet [0x1311BBC4+44184020]
+	cef_time_to_timet [0x1311BF8E+44184990]
+	cef_time_to_timet [0x107CF90C+880412]
+	cef_time_to_timet [0x131167B9+44162505]
+	cef_time_to_timet [0x131182D6+44169446]
+	cef_time_to_timet [0x10A18A8C+3276956]
+	cef_time_to_timet [0x10A18A2A+3276858]
+	cef_time_to_timet [0x10A1896F+3276671]
+	cef_time_to_timet [0x10A189EF+3276799]
+	cef_trace_event_instant [0x1065C8DF+8703]
+	cef_time_to_timet [0x109F7FFB+3143179]
+	cef_time_to_timet [0x1090C4F8+2177800]
+	cef_time_to_timet [0x1090A7C4+2170324]
+	cef_time_to_timet [0x1090ADAD+2171837]
+	cef_time_to_timet [0x109FBD62+3158898]
+	cef_time_to_timet [0x109FD852+3165794]
+
+[0222/174732:ERROR:render_process_impl.cc(69)] WebFrame LEAKED 1 TIMES
+[0222/174732:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x109BEE21+2909233]
+	cef_time_to_timet [0x108E18FF+2002703]
+	cef_time_to_timet [0x1101D031+9586241]
+	IsSandboxedProcess [0x16E285C7+845911]
+	SetCrashKeyValueImpl [0x156605B4+35371860]
+	cef_string_list_value [0x10655AAF+159951]
+	cef_string_list_value [0x10654F77+157079]
+	cef_initialize [0x1058AC58+504]
+	CefInitialize [0x00040380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x000318D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x000D9D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x000D7F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x000D7D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174732:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x109BEE21+2909233]
+	cef_time_to_timet [0x108E18FF+2002703]
+	cef_time_to_timet [0x1101D031+9586241]
+	IsSandboxedProcess [0x16E285C7+845911]
+	SetCrashKeyValueImpl [0x156605B4+35371860]
+	cef_string_list_value [0x10655AAF+159951]
+	cef_string_list_value [0x10654F77+157079]
+	cef_initialize [0x1058AC58+504]
+	CefInitialize [0x00040380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x000318D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x000D9D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x000D7F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x000D7D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174740:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/174741:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/174856:ERROR:render_process_impl.cc(69)] WebFrame LEAKED 1 TIMES
+[0222/174856:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x109BEE21+2909233]
+	cef_time_to_timet [0x108E18FF+2002703]
+	cef_time_to_timet [0x1101D031+9586241]
+	IsSandboxedProcess [0x16E285C7+845911]
+	SetCrashKeyValueImpl [0x156605B4+35371860]
+	cef_string_list_value [0x10655AAF+159951]
+	cef_string_list_value [0x10654F77+157079]
+	cef_initialize [0x1058AC58+504]
+	CefInitialize [0x00040380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x000318D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x000D9D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x000D7F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x000D7D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/174856:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x109BEE21+2909233]
+	cef_time_to_timet [0x108E18FF+2002703]
+	cef_time_to_timet [0x1101D031+9586241]
+	IsSandboxedProcess [0x16E285C7+845911]
+	SetCrashKeyValueImpl [0x156605B4+35371860]
+	cef_string_list_value [0x10655AAF+159951]
+	cef_string_list_value [0x10654F77+157079]
+	cef_initialize [0x1058AC58+504]
+	CefInitialize [0x00040380+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x000318D3+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x000D9D1D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x000D7F9F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x000D7D5D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+

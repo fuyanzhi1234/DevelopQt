@@ -6,106 +6,123 @@
 #define CEF_TESTS_CEFSIMPLE_SIMPLE_HANDLER_H_
 
 #include "include/cef_client.h"
-
 #include <list>
+#include <QObject>
+#include <QString>
 
-class SimpleHandler : public CefClient,
-						public CefContextMenuHandler,
-						public CefDisplayHandler,
-						public CefLifeSpanHandler,
-						public CefLoadHandler,
-						public CefRequestHandler {
- public:
-  SimpleHandler();
-  ~SimpleHandler();
+class SimpleHandler : public QObject,
+	public CefClient,
+	public CefContextMenuHandler,
+	public CefDisplayHandler,
+	public CefLifeSpanHandler,
+	public CefLoadHandler,
+	public CefRequestHandler {
 
-  // Provide access to the single global instance of this object.
-  static SimpleHandler* GetInstance();
+	Q_OBJECT
 
-  // CefClient methods
-  virtual CefRefPtr<CefContextMenuHandler> GetContextMenuHandler() OVERRIDE{
-	  return this;
-  }
-  virtual CefRefPtr<CefDisplayHandler> GetDisplayHandler() OVERRIDE {
-    return this;
-  }
-  virtual CefRefPtr<CefLifeSpanHandler> GetLifeSpanHandler() OVERRIDE {
-    return this;
-  }
-  virtual CefRefPtr<CefLoadHandler> GetLoadHandler() OVERRIDE {
-    return this;
-  }
-  virtual CefRefPtr<CefRequestHandler> GetRequestHandler() OVERRIDE{
-	  return this;
-  }
+public:
+	SimpleHandler();
+	~SimpleHandler();
 
-  // CefDisplayHandler methods:
-  virtual void OnTitleChange(CefRefPtr<CefBrowser> browser,
-                             const CefString& title) OVERRIDE;
+	// Provide access to the single global instance of this object.
+	static SimpleHandler* GetInstance();
 
-  // CefLifeSpanHandler methods:
-  virtual bool OnBeforePopup(
-	  CefRefPtr<CefBrowser> browser,
-	  CefRefPtr<CefFrame> frame,
-	  const CefString& target_url,
-	  const CefString& target_frame_name,
-	  CefLifeSpanHandler::WindowOpenDisposition target_disposition,
-	  bool user_gesture,
-	  const CefPopupFeatures& popupFeatures,
-	  CefWindowInfo& windowInfo,
-	  CefRefPtr<CefClient>& client,
-	  CefBrowserSettings& settings,
-	  bool* no_javascript_access) OVERRIDE;
-  virtual void OnAfterCreated(CefRefPtr<CefBrowser> browser) OVERRIDE;
-  virtual bool DoClose(CefRefPtr<CefBrowser> browser) OVERRIDE;
-  virtual void OnBeforeClose(CefRefPtr<CefBrowser> browser) OVERRIDE;
+	// CefClient methods
+	virtual CefRefPtr<CefContextMenuHandler> GetContextMenuHandler() OVERRIDE{
+		return this;
+	}
+	virtual CefRefPtr<CefDisplayHandler> GetDisplayHandler() OVERRIDE{
+		return this;
+	}
+	virtual CefRefPtr<CefLifeSpanHandler> GetLifeSpanHandler() OVERRIDE{
+		return this;
+	}
+	virtual CefRefPtr<CefLoadHandler> GetLoadHandler() OVERRIDE{
+		return this;
+	}
+	virtual CefRefPtr<CefRequestHandler> GetRequestHandler() OVERRIDE{
+		return this;
+	}
 
-  // CefLoadHandler methods:
-  virtual void OnLoadError(CefRefPtr<CefBrowser> browser,
-                           CefRefPtr<CefFrame> frame,
-                           ErrorCode errorCode,
-                           const CefString& errorText,
-                           const CefString& failedUrl) OVERRIDE;
+	// CefDisplayHandler methods:
+	virtual void OnTitleChange(CefRefPtr<CefBrowser> browser,
+		const CefString& title) OVERRIDE;
 
-  // Request that all existing browser windows close.
-  void CloseAllBrowsers(bool force_close);
+	// CefLifeSpanHandler methods:
+	virtual bool OnBeforePopup(
+		CefRefPtr<CefBrowser> browser,
+		CefRefPtr<CefFrame> frame,
+		const CefString& target_url,
+		const CefString& target_frame_name,
+		CefLifeSpanHandler::WindowOpenDisposition target_disposition,
+		bool user_gesture,
+		const CefPopupFeatures& popupFeatures,
+		CefWindowInfo& windowInfo,
+		CefRefPtr<CefClient>& client,
+		CefBrowserSettings& settings,
+		bool* no_javascript_access) OVERRIDE;
+	virtual void OnAfterCreated(CefRefPtr<CefBrowser> browser) OVERRIDE;
+	virtual bool DoClose(CefRefPtr<CefBrowser> browser) OVERRIDE;
+	virtual void OnBeforeClose(CefRefPtr<CefBrowser> browser) OVERRIDE;
 
-  bool IsClosing() const { return is_closing_; }
+	// CefLoadHandler methods:
+	virtual void OnLoadError(CefRefPtr<CefBrowser> browser,
+		CefRefPtr<CefFrame> frame,
+		ErrorCode errorCode,
+		const CefString& errorText,
+		const CefString& failedUrl) OVERRIDE;
 
-  // CefContextMenuHandler methods
-  void OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
-	  CefRefPtr<CefFrame> frame,
-	  CefRefPtr<CefContextMenuParams> params,
-	  CefRefPtr<CefMenuModel> model) OVERRIDE;
-  bool OnContextMenuCommand(CefRefPtr<CefBrowser> browser,
-	  CefRefPtr<CefFrame> frame,
-	  CefRefPtr<CefContextMenuParams> params,
-	  int command_id,
-	  EventFlags event_flags) OVERRIDE;
+	// Request that all existing browser windows close.
+	void CloseAllBrowsers(bool force_close);
 
-  // CefRequestHandler methods
-  bool OnCertificateError(
-	  CefRefPtr<CefBrowser> browser,
-	  ErrorCode cert_error,
-	  const CefString& request_url,
-	  CefRefPtr<CefSSLInfo> ssl_info,
-	  CefRefPtr<CefRequestCallback> callback) OVERRIDE;
-  void OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
-	  TerminationStatus status) OVERRIDE;
+	bool IsClosing() const { return is_closing_; }
 
+	// CefContextMenuHandler methods
+	void OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
+		CefRefPtr<CefFrame> frame,
+		CefRefPtr<CefContextMenuParams> params,
+		CefRefPtr<CefMenuModel> model) OVERRIDE;
+	bool OnContextMenuCommand(CefRefPtr<CefBrowser> browser,
+		CefRefPtr<CefFrame> frame,
+		CefRefPtr<CefContextMenuParams> params,
+		int command_id,
+		EventFlags event_flags) OVERRIDE;
 
+	// CefRequestHandler methods
+	bool OnCertificateError(
+		CefRefPtr<CefBrowser> browser,
+		ErrorCode cert_error,
+		const CefString& request_url,
+		CefRefPtr<CefSSLInfo> ssl_info,
+		CefRefPtr<CefRequestCallback> callback) OVERRIDE;
+
+	bool GetAuthCredentials(CefRefPtr<CefBrowser> browser,
+		CefRefPtr<CefFrame> frame,
+		bool isProxy,
+		const CefString& host,
+		int port,
+		const CefString& realm,
+		const CefString& scheme,
+		CefRefPtr<CefAuthCallback> callback);
+
+	void OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
+		TerminationStatus status) OVERRIDE;
+
+signals:
+	// 显示授权对话框
+	void showAuthorityDialog(QString userName, QString userPassword);
 public:
 	void setZoom(double delta);
 
- private:
-  // List of existing browser windows. Only accessed on the CEF UI thread.
-  typedef std::list<CefRefPtr<CefBrowser> > BrowserList;
-  BrowserList browser_list_;
+private:
+	// List of existing browser windows. Only accessed on the CEF UI thread.
+	typedef std::list<CefRefPtr<CefBrowser> > BrowserList;
+	BrowserList browser_list_;
 
-  bool is_closing_;
+	bool is_closing_;
 
-  // Include the default reference counting implementation.
-  IMPLEMENT_REFCOUNTING(SimpleHandler);
+	// Include the default reference counting implementation.
+	IMPLEMENT_REFCOUNTING(SimpleHandler);
 };
 
 #endif  // CEF_TESTS_CEFSIMPLE_SIMPLE_HANDLER_H_

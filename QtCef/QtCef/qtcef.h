@@ -22,6 +22,9 @@ private slots:
 	// 新窗口
 	void OnNewWin();
 
+	// 显示授权对话框
+	void OnShowAuthorityDialog(QString userName, QString userPassword);
+
 private:
 	Ui::QtCefClass ui;
 };

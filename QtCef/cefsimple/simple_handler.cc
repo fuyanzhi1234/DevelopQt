@@ -182,6 +182,22 @@ bool SimpleHandler::OnCertificateError(
 	return false;  // Cancel the request.
 }
 
+// 显示授权窗口
+bool SimpleHandler::GetAuthCredentials(CefRefPtr<CefBrowser> browser,
+	CefRefPtr<CefFrame> frame,
+	bool isProxy,
+	const CefString& host,
+	int port,
+	const CefString& realm,
+	const CefString& scheme,
+	CefRefPtr<CefAuthCallback> callback) {
+	QString userName = "";
+	QString userPassword = "";
+	emit showAuthorityDialog(userName, userPassword);
+	callback->Continue(userName.toStdString(), userPassword.toStdString());
+	return true;
+}
+
 // 只有在多进程模式下，此函数才会响应
 void SimpleHandler::OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
 	TerminationStatus status) {

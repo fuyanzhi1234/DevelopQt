@@ -31,7 +31,7 @@ QtCef::QtCef(QWidget *parent)
 	// Specify CEF browser settings here.
 	CefBrowserSettings browser_settings;
 
-	std::string url = "http://www.tudou.com/albumplay/O_rsUYsockQ/-CzPfQCKM2o.html";
+	std::string url = "http://192.168.16.81:58760/svn/studyfun/DevBranch";
 
 	// Create the first browser window.
 	CefBrowserHost::CreateBrowser(window_info, SimpleHandler::GetInstance(), url,
@@ -39,6 +39,8 @@ QtCef::QtCef(QWidget *parent)
 	connect(ui.pushButton_zoom_in, SIGNAL(clicked()), SLOT(OnZoomIn()));
 	connect(ui.pushButton_zoom_out, SIGNAL(clicked()), SLOT(OnZoomOut()));
 	connect(ui.pushButton_newwin, SIGNAL(clicked()), SLOT(OnNewWin()));
+
+	connect(SimpleHandler::GetInstance(), SIGNAL(showAuthorityDialog(QString, QString)), SLOT(OnShowAuthorityDialog(QString, QString)));
 }
 
 QtCef::~QtCef()
@@ -63,4 +65,11 @@ void QtCef::OnNewWin()
 {
 	NewCefWin *newWin = new NewCefWin();
 	newWin->show();
+}
+
+// 显示授权对话框
+void QtCef::OnShowAuthorityDialog(QString userName, QString userPassword)
+{
+	userName = "fuyanzhi";
+	userPassword = "linlin1314";
 }
