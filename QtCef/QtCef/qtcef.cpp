@@ -31,7 +31,7 @@ QtCef::QtCef(QWidget *parent)
 	// Specify CEF browser settings here.
 	CefBrowserSettings browser_settings;
 
-	std::string url = "http://www.baidu.com";
+	std::string url = "http://www.tudou.com/albumplay/O_rsUYsockQ/-CzPfQCKM2o.html";
 
 	// Create the first browser window.
 	CefBrowserHost::CreateBrowser(window_info, SimpleHandler::GetInstance(), url,
@@ -49,13 +49,13 @@ QtCef::~QtCef()
 // 放大
 void QtCef::OnZoomIn()
 {
-	SimpleHandler::GetInstance()->setZoom(0.5);
+// 	SimpleHandler::GetInstance()->setZoom(0.5);
 }
 
 // 缩小
 void QtCef::OnZoomOut()
 {
-	SimpleHandler::GetInstance()->setZoom(-0.5);
+// 	SimpleHandler::GetInstance()->setZoom(-0.5);
 }
 
 // 新窗口

@@ -1,0 +1,958 @@
+[0222/101536:ERROR:proxy_service_factory.cc(111)] Cannot use V8 Proxy resolver in single process mode.
+[0222/101538:FATAL:discardable_memory_allocator.cc(23)] Check failed: !g_allocator. 
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	SetCrashKeyValueImpl [0x15962966+42327814]
+	SetCrashKeyValueImpl [0x1467371F+22473919]
+	SetCrashKeyValueImpl [0x14669764+22433028]
+	IsSandboxedProcess [0x16E8E7DA+5065322]
+	cef_time_to_timet [0x105DD106+2639638]
+	cef_time_to_timet [0x1056398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/101551:ERROR:ppapi_thread.cc(289)] Failed to load Pepper module from plugins\pepflashplayer.dll (error: 126)
+[0222/101552:FATAL:plugin_service_impl.cc(483)] Check failed: WebPluginInfo::PLUGIN_TYPE_NPAPI == info.type (0 vs. 2)
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	SetCrashKeyValueImpl [0x134FE5FF+4168607]
+	SetCrashKeyValueImpl [0x134FE45D+4168189]
+	SetCrashKeyValueImpl [0x13500E0E+4178862]
+	SetCrashKeyValueImpl [0x134FF93B+4173531]
+	SetCrashKeyValueImpl [0x135008EC+4177548]
+	SetCrashKeyValueImpl [0x135007AC+4177228]
+	SetCrashKeyValueImpl [0x134FF868+4173320]
+	SetCrashKeyValueImpl [0x13500C99+4178489]
+	cef_trace_event_instant [0x102BC8DF+8703]
+	cef_time_to_timet [0x10657FFB+3143179]
+	cef_time_to_timet [0x1056C4F8+2177800]
+	cef_time_to_timet [0x1056A7C4+2170324]
+	cef_time_to_timet [0x1056ADAD+2171837]
+	cef_time_to_timet [0x1065BD62+3158898]
+	cef_time_to_timet [0x1065D852+3165794]
+	cef_time_to_timet [0x1065D7BC+3165644]
+	cef_time_to_timet [0x1056C307+2177303]
+	cef_time_to_timet [0x105DB006+2631190]
+	cef_time_to_timet [0x1056C1BB+2176971]
+	cef_time_to_timet [0x105DC666+2636918]
+	SetCrashKeyValueImpl [0x134BE514+3906228]
+	SetCrashKeyValueImpl [0x134BF66B+3910667]
+	cef_time_to_timet [0x105DD138+2639688]
+	cef_time_to_timet [0x1056398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/101601:ERROR:scoped_com_initializer.h(58)] Multiple CoInitialize() calls for thread 6792
+[0222/101601:VERBOSE2:ipc_channel_win.cc(418)] sent message @0D5BD030 on channel @0D7FCBF0 with type 65535
+[0222/101601:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/101601:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/101601:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/101601:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/101601:VERBOSE2:ipc_channel_win.cc(83)] sending message @0D5BD128 on channel @0D7FCBF0 with type 262230 (0 in queue)
+[0222/101601:VERBOSE2:ipc_channel_win.cc(418)] sent message @0D5BD128 on channel @0D7FCBF0 with type 262230
+[0222/101601:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/101601:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/101601:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/101601:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/101601:WARNING:webplugin_delegate_proxy.cc(373)] PluginMsg_Init returned false
+[0222/101601:FATAL:plugin_service_impl.cc(483)] Check failed: WebPluginInfo::PLUGIN_TYPE_NPAPI == info.type (0 vs. 2)
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	SetCrashKeyValueImpl [0x134FE5FF+4168607]
+	SetCrashKeyValueImpl [0x134FE45D+4168189]
+	SetCrashKeyValueImpl [0x13500E0E+4178862]
+	SetCrashKeyValueImpl [0x134FF93B+4173531]
+	SetCrashKeyValueImpl [0x135008EC+4177548]
+	SetCrashKeyValueImpl [0x135007AC+4177228]
+	SetCrashKeyValueImpl [0x134FF868+4173320]
+	SetCrashKeyValueImpl [0x13500C99+4178489]
+	cef_trace_event_instant [0x102BC8DF+8703]
+	cef_time_to_timet [0x10657FFB+3143179]
+	cef_time_to_timet [0x1056C4F8+2177800]
+	cef_time_to_timet [0x1056A7C4+2170324]
+	cef_time_to_timet [0x1056ADAD+2171837]
+	cef_time_to_timet [0x1065BD62+3158898]
+	cef_time_to_timet [0x1065D852+3165794]
+	cef_time_to_timet [0x1065D7BC+3165644]
+	cef_time_to_timet [0x1056C307+2177303]
+	cef_time_to_timet [0x105DB006+2631190]
+	cef_time_to_timet [0x1056C1BB+2176971]
+	cef_time_to_timet [0x105DC666+2636918]
+	SetCrashKeyValueImpl [0x134BE514+3906228]
+	SetCrashKeyValueImpl [0x134BF66B+3910667]
+	cef_time_to_timet [0x105DD138+2639688]
+	cef_time_to_timet [0x1056398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/101707:ERROR:proxy_service_factory.cc(111)] Cannot use V8 Proxy resolver in single process mode.
+[0222/101707:FATAL:discardable_memory_allocator.cc(23)] Check failed: !g_allocator. 
+Backtrace:
+	cef_time_to_timet [0x1074EE21+2909233]
+	cef_time_to_timet [0x106718FF+2002703]
+	SetCrashKeyValueImpl [0x15A92966+42327814]
+	SetCrashKeyValueImpl [0x147A371F+22473919]
+	SetCrashKeyValueImpl [0x14799764+22433028]
+	IsSandboxedProcess [0x16FBE7DA+5065322]
+	cef_time_to_timet [0x1070D106+2639638]
+	cef_time_to_timet [0x1069398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/101836:ERROR:proxy_service_factory.cc(111)] Cannot use V8 Proxy resolver in single process mode.
+[0222/101836:FATAL:discardable_memory_allocator.cc(23)] Check failed: !g_allocator. 
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	SetCrashKeyValueImpl [0x15962966+42327814]
+	SetCrashKeyValueImpl [0x1467371F+22473919]
+	SetCrashKeyValueImpl [0x14669764+22433028]
+	IsSandboxedProcess [0x16E8E7DA+5065322]
+	cef_time_to_timet [0x105DD106+2639638]
+	cef_time_to_timet [0x1056398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/101857:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/101857:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/101857:WARNING:channel.cc(315)] RawChannel write error
+[0222/101924:ERROR:scoped_ole_initializer.cc(20)] Multiple OleInitialize() calls for thread 7016
+[0222/101953:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x1085EE21+2909233]
+	cef_time_to_timet [0x107818FF+2002703]
+	cef_time_to_timet [0x10EBD031+9586241]
+	IsSandboxedProcess [0x16CC85C7+845911]
+	SetCrashKeyValueImpl [0x155005B4+35371860]
+	cef_string_list_value [0x104F5AAF+159951]
+	cef_string_list_value [0x104F4F77+157079]
+	cef_initialize [0x1042AC58+504]
+	CefInitialize [0x008EB2B0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x008E0C79+297] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x009891BD+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x0098743F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x009871FD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/102012:ERROR:scoped_ole_initializer.cc(20)] Multiple OleInitialize() calls for thread 8436
+[0222/102012:FATAL:browser_host_impl_win.cc(788)] Check failed: window_info_.window != NULL. 
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x103CFFC0+488912]
+	cef_string_multimap_value [0x102F9326+167350]
+	cef_string_multimap_value [0x102F82D8+163176]
+	cef_string_multimap_value [0x102F8AE7+165239]
+	cef_string_multimap_value [0x102F8BE8+165496]
+	cef_string_multimap_value [0x10306527+221111]
+	cef_string_multimap_value [0x103001E8+195704]
+	cef_string_multimap_value [0x10306306+220566]
+	cef_trace_event_instant [0x102BC8DF+8703]
+	cef_time_to_timet [0x10657FFB+3143179]
+	cef_time_to_timet [0x1056C4F8+2177800]
+	cef_time_to_timet [0x1056A7C4+2170324]
+	cef_time_to_timet [0x1056ADAD+2171837]
+	cef_time_to_timet [0x1065BEB4+3159236]
+	cef_time_to_timet [0x1065D852+3165794]
+	cef_time_to_timet [0x1065D7BC+3165644]
+	cef_time_to_timet [0x1056C307+2177303]
+	cef_time_to_timet [0x105DB006+2631190]
+	cef_time_to_timet [0x1056C1BB+2176971]
+	cef_time_to_timet [0x1037FD26+160566]
+	cef_string_list_value [0x102B5285+157861]
+	cef_run_message_loop [0x101EC398+8]
+	CefRunMessageLoop [0x00EDEBBC+12] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:286)
+	main [0x00ED0C81+305] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:63)
+	WinMain [0x00F791BD+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x00F7743F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x00F771FD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/102030:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x10C7D031+9586241]
+	IsSandboxedProcess [0x16A885C7+845911]
+	SetCrashKeyValueImpl [0x152C05B4+35371860]
+	cef_string_list_value [0x102B5AAF+159951]
+	cef_string_list_value [0x102B4F77+157079]
+	cef_initialize [0x101EAC58+504]
+	CefInitialize [0x00EDB2B0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00ED0C79+297] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x00F791BD+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x00F7743F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x00F771FD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/102156:ERROR:scoped_ole_initializer.cc(20)] Multiple OleInitialize() calls for thread 4156
+[0222/102235:FATAL:browser_host_impl_win.cc(788)] Check failed: window_info_.window != NULL. 
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x103CFFC0+488912]
+	cef_string_multimap_value [0x102F9326+167350]
+	cef_string_multimap_value [0x102F82D8+163176]
+	cef_string_multimap_value [0x102F8AE7+165239]
+	cef_string_multimap_value [0x102F8BE8+165496]
+	cef_string_multimap_value [0x10306527+221111]
+	cef_string_multimap_value [0x103001E8+195704]
+	cef_string_multimap_value [0x10306306+220566]
+	cef_trace_event_instant [0x102BC8DF+8703]
+	cef_time_to_timet [0x10657FFB+3143179]
+	cef_time_to_timet [0x1056C4F8+2177800]
+	cef_time_to_timet [0x1056A7C4+2170324]
+	cef_time_to_timet [0x1056ADAD+2171837]
+	cef_time_to_timet [0x1065BEB4+3159236]
+	cef_time_to_timet [0x1065D852+3165794]
+	cef_time_to_timet [0x1065D7BC+3165644]
+	cef_time_to_timet [0x1056C307+2177303]
+	cef_time_to_timet [0x105DB006+2631190]
+	cef_time_to_timet [0x1056C1BB+2176971]
+	cef_time_to_timet [0x1037FD26+160566]
+	cef_string_list_value [0x102B5285+157861]
+	cef_run_message_loop [0x101EC398+8]
+	CefRunMessageLoop [0x00EDEBBC+12] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:286)
+	main [0x00ED0C81+305] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:63)
+	WinMain [0x00F791BD+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x00F7743F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x00F771FD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/102448:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x10C7D031+9586241]
+	IsSandboxedProcess [0x16A885C7+845911]
+	SetCrashKeyValueImpl [0x152C05B4+35371860]
+	cef_string_list_value [0x102B5AAF+159951]
+	cef_string_list_value [0x102B4F77+157079]
+	cef_initialize [0x101EAC58+504]
+	CefInitialize [0x00EDB2B0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00ED0C79+297] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x00F791BD+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x00F7743F+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x00F771FD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/102508:FATAL:browser_host_impl_win.cc(788)] Check failed: window_info_.window != NULL. 
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x103CFFC0+488912]
+	cef_string_multimap_value [0x102F9326+167350]
+	cef_string_multimap_value [0x102F82D8+163176]
+	cef_string_multimap_value [0x102F8AE7+165239]
+	cef_string_multimap_value [0x102F8BE8+165496]
+	cef_string_multimap_value [0x10306527+221111]
+	cef_string_multimap_value [0x103001E8+195704]
+	cef_string_multimap_value [0x10306306+220566]
+	cef_trace_event_instant [0x102BC8DF+8703]
+	cef_time_to_timet [0x10657FFB+3143179]
+	cef_time_to_timet [0x1056C4F8+2177800]
+	cef_time_to_timet [0x1056A7C4+2170324]
+	cef_time_to_timet [0x1056ADAD+2171837]
+	cef_time_to_timet [0x1065BEB4+3159236]
+	cef_time_to_timet [0x1065D852+3165794]
+	cef_time_to_timet [0x1065D7BC+3165644]
+	cef_time_to_timet [0x1056C307+2177303]
+	cef_time_to_timet [0x105DB006+2631190]
+	cef_time_to_timet [0x1056C1BB+2176971]
+	cef_time_to_timet [0x1037FD26+160566]
+	cef_string_list_value [0x102B5285+157861]
+	cef_run_message_loop [0x101EC398+8]
+	CefRunMessageLoop [0x00B2A0AC+12] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:286)
+	wWinMain [0x00B0DF6B+235] (e:\gitroom\developqt\qtcef\cefsimple\cefsimple_win.cc:75)
+	__tmainCRTStartup [0x00BC760C+540] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	wWinMainCRTStartup [0x00BC774D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/103014:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/103015:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/103045:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/103045:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/103048:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/103048:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/103048:WARNING:channel.cc(315)] RawChannel write error
+[0222/103139:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/103139:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/103154:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/103154:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/103154:WARNING:channel.cc(315)] RawChannel write error
+[0222/103206:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/103206:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/103212:ERROR:render_process_impl.cc(69)] WebFrame LEAKED 1 TIMES
+[0222/103212:FATAL:v8_impl.cc(82)] Check failed: context_map_.empty(). 
+Backtrace:
+	cef_time_to_timet [0x1087EE21+2909233]
+	cef_time_to_timet [0x107A18FF+2002703]
+	cef_string_list_value [0x104F6078+30360]
+	cef_string_list_value [0x104F95D6+44022]
+	cef_string_list_value [0x104FDAE9+61705]
+	cef_string_list_value [0x104FB314+51508]
+	cef_time_to_timet [0x105D9503+133907]
+	cef_time_to_timet [0x1069F4BA+944842]
+	SetCrashKeyValueImpl [0x148D6D03+22487715]
+	SetCrashKeyValueImpl [0x14CF7C7B+26817051]
+	IsSandboxedProcess [0x170EF32F+5068223]
+	IsSandboxedProcess [0x170EF41F+5068463]
+	IsSandboxedProcess [0x170EEEB8+5067080]
+	SetCrashKeyValueImpl [0x155213C9+35375465]
+	SetCrashKeyValueImpl [0x15521291+35375153]
+	SetCrashKeyValueImpl [0x1551F8C0+35368544]
+	cef_string_list_value [0x10514D01+156449]
+	cef_execute_process [0x1044A2EE+270]
+	CefExecuteProcess [0x00C8686E+398] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:142)
+	wWinMain [0x00C6DF3F+127] (e:\gitroom\developqt\qtcef\cefsimple\cefsimple_win.cc:54)
+	__tmainCRTStartup [0x00D2786C+540] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	wWinMainCRTStartup [0x00D279AD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/103219:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/103219:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/103220:ERROR:ssl_client_socket_openssl.cc(1014)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0222/103320:ERROR:scoped_ole_initializer.cc(20)] Multiple OleInitialize() calls for thread 8308
+[0222/103348:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x10C7D031+9586241]
+	IsSandboxedProcess [0x16A885C7+845911]
+	SetCrashKeyValueImpl [0x152C05B4+35371860]
+	cef_string_list_value [0x102B5AAF+159951]
+	cef_string_list_value [0x102B4F77+157079]
+	cef_initialize [0x101EAC58+504]
+	CefInitialize [0x000AFAC0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x000A10C9+297] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x0014945D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x001476DF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x0014749D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/103355:ERROR:scoped_ole_initializer.cc(20)] Multiple OleInitialize() calls for thread 6824
+[0222/103356:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/103356:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/103405:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/103405:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/103405:WARNING:channel.cc(315)] RawChannel write error
+[0222/103433:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10EAEE21+2909233]
+	cef_time_to_timet [0x10DD18FF+2002703]
+	cef_time_to_timet [0x1150D031+9586241]
+	IsSandboxedProcess [0x173185C7+845911]
+	SetCrashKeyValueImpl [0x15B505B4+35371860]
+	cef_string_list_value [0x10B45AAF+159951]
+	cef_string_list_value [0x10B44F77+157079]
+	cef_initialize [0x10A7AC58+504]
+	CefInitialize [0x00D9FAC0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00D910C9+297] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x00E3945D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x00E376DF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x00E3749D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/103442:ERROR:scoped_ole_initializer.cc(20)] Multiple OleInitialize() calls for thread 8672
+[0222/103546:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x107CEE21+2909233]
+	cef_time_to_timet [0x106F18FF+2002703]
+	cef_time_to_timet [0x10E2D031+9586241]
+	IsSandboxedProcess [0x16C385C7+845911]
+	SetCrashKeyValueImpl [0x154705B4+35371860]
+	cef_string_list_value [0x10465AAF+159951]
+	cef_string_list_value [0x10464F77+157079]
+	cef_initialize [0x1039AC58+504]
+	CefInitialize [0x0021FAC0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x002110C9+297] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x002B945D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x002B76DF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x002B749D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/103556:ERROR:scoped_ole_initializer.cc(20)] Multiple OleInitialize() calls for thread 2936
+[0222/103613:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10AAEE21+2909233]
+	cef_time_to_timet [0x109D18FF+2002703]
+	cef_time_to_timet [0x1110D031+9586241]
+	IsSandboxedProcess [0x16F185C7+845911]
+	SetCrashKeyValueImpl [0x157505B4+35371860]
+	cef_string_list_value [0x10745AAF+159951]
+	cef_string_list_value [0x10744F77+157079]
+	cef_initialize [0x1067AC58+504]
+	CefInitialize [0x0088FAC0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x008810C9+297] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x0092945D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x009276DF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x0092749D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/103711:ERROR:scoped_ole_initializer.cc(20)] Multiple OleInitialize() calls for thread 9056
+[0222/103713:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/103713:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/103856:ERROR:render_process_impl.cc(69)] WebFrame LEAKED 1 TIMES
+[0222/103856:FATAL:v8_impl.cc(82)] Check failed: context_map_.empty(). 
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_string_list_value [0x10296078+30360]
+	cef_string_list_value [0x102995D6+44022]
+	cef_string_list_value [0x1029DAE9+61705]
+	cef_string_list_value [0x1029B314+51508]
+	cef_time_to_timet [0x10379503+133907]
+	cef_time_to_timet [0x1043F4BA+944842]
+	SetCrashKeyValueImpl [0x14676D03+22487715]
+	SetCrashKeyValueImpl [0x14A97C7B+26817051]
+	IsSandboxedProcess [0x16E8F32F+5068223]
+	IsSandboxedProcess [0x16E8F41F+5068463]
+	IsSandboxedProcess [0x16E8EEB8+5067080]
+	SetCrashKeyValueImpl [0x152C13C9+35375465]
+	SetCrashKeyValueImpl [0x152C1291+35375153]
+	SetCrashKeyValueImpl [0x152BF8C0+35368544]
+	cef_string_list_value [0x102B4D01+156449]
+	cef_execute_process [0x101EA2EE+270]
+	CefExecuteProcess [0x0113F8AE+398] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:142)
+	main [0x01131079+217] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:44)
+	WinMain [0x011D945D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x011D76DF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x011D749D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/103857:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x10C7D031+9586241]
+	IsSandboxedProcess [0x16A885C7+845911]
+	SetCrashKeyValueImpl [0x152C05B4+35371860]
+	cef_string_list_value [0x102B5AAF+159951]
+	cef_string_list_value [0x102B4F77+157079]
+	cef_initialize [0x101EAC58+504]
+	CefInitialize [0x0113FAC0+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x011310C9+297] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x011D945D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x011D76DF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x011D749D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/103916:ERROR:scoped_ole_initializer.cc(20)] Multiple OleInitialize() calls for thread 6644
+[0222/103933:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10DCEE21+2909233]
+	cef_time_to_timet [0x10CF18FF+2002703]
+	cef_time_to_timet [0x1142D031+9586241]
+	IsSandboxedProcess [0x172385C7+845911]
+	SetCrashKeyValueImpl [0x15A705B4+35371860]
+	cef_string_list_value [0x10A65AAF+159951]
+	cef_string_list_value [0x10A64F77+157079]
+	cef_initialize [0x1099AC58+504]
+	CefInitialize [0x00F2B260+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00F20BF9+297] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x00FC916D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x00FC73EF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x00FC71AD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/103941:ERROR:proxy_service_factory.cc(111)] Cannot use V8 Proxy resolver in single process mode.
+[0222/103941:FATAL:discardable_memory_allocator.cc(23)] Check failed: !g_allocator. 
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	SetCrashKeyValueImpl [0x15962966+42327814]
+	SetCrashKeyValueImpl [0x1467371F+22473919]
+	SetCrashKeyValueImpl [0x14669764+22433028]
+	IsSandboxedProcess [0x16E8E7DA+5065322]
+	cef_time_to_timet [0x105DD106+2639638]
+	cef_time_to_timet [0x1056398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/104003:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/104004:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/104026:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/104026:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/104037:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/104037:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/104037:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 2147483648, remote ID 2)
+[0222/104037:FATAL:browser_main.cc(153)] Check failed: 0 == CefBrowserContext::DebugObjCt (0 vs. 1)
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	cef_time_to_timet [0x10453481+1026705]
+	SetCrashKeyValueImpl [0x136E9D10+6181552]
+	SetCrashKeyValueImpl [0x1364A9B5+5529429]
+	cef_time_to_timet [0x10395895+249509]
+	cef_time_to_timet [0x105DD155+2639717]
+	cef_time_to_timet [0x1056398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/104111:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/104111:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/104131:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/104131:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/104131:WARNING:channel.cc(315)] RawChannel write error
+[0222/104131:FATAL:browser_main.cc(153)] Check failed: 0 == CefBrowserContext::DebugObjCt (0 vs. 1)
+Backtrace:
+	cef_time_to_timet [0x10F8EE21+2909233]
+	cef_time_to_timet [0x10EB18FF+2002703]
+	cef_time_to_timet [0x10DC3481+1026705]
+	SetCrashKeyValueImpl [0x14059D10+6181552]
+	SetCrashKeyValueImpl [0x13FBA9B5+5529429]
+	cef_time_to_timet [0x10D05895+249509]
+	cef_time_to_timet [0x10F4D155+2639717]
+	cef_time_to_timet [0x10ED398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/104136:FATAL:gpu_process_transport_factory.cc(112)] Check failed: per_compositor_data_.empty(). 
+Backtrace:
+	cef_time_to_timet [0x10F8EE21+2909233]
+	cef_time_to_timet [0x10EB18FF+2002703]
+	SetCrashKeyValueImpl [0x14422BF0+10150288]
+	SetCrashKeyValueImpl [0x144251C6+10159974]
+	SetCrashKeyValueImpl [0x13FC4D62+5571330]
+	SetCrashKeyValueImpl [0x14059FA7+6182215]
+	SetCrashKeyValueImpl [0x13FBA9B5+5529429]
+	cef_time_to_timet [0x10D05895+249509]
+	cef_time_to_timet [0x10F4D155+2639717]
+	cef_time_to_timet [0x10ED398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/104140:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10F8EE21+2909233]
+	cef_time_to_timet [0x10EB18FF+2002703]
+	cef_time_to_timet [0x115ED031+9586241]
+	IsSandboxedProcess [0x173F85C7+845911]
+	SetCrashKeyValueImpl [0x15C305B4+35371860]
+	cef_string_list_value [0x10C25AAF+159951]
+	cef_string_list_value [0x10C24F77+157079]
+	cef_initialize [0x10B5AC58+504]
+	CefInitialize [0x0011B260+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00110C03+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x001B916D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x001B73EF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x001B71AD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/104220:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/104220:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/104226:ERROR:scoped_com_initializer.h(58)] Multiple CoInitialize() calls for thread 5836
+[0222/104226:VERBOSE2:ipc_channel_win.cc(418)] sent message @03FFB1F0 on channel @05A42908 with type 65535
+[0222/104226:VERBOSE2:ipc_channel_win.cc(83)] sending message @03F4DB88 on channel @05A42908 with type 262230 (0 in queue)
+[0222/104226:VERBOSE2:ipc_channel_win.cc(418)] sent message @03F4DB88 on channel @05A42908 with type 262230
+[0222/104227:VERBOSE2:ipc_channel_win.cc(418)] sent message @03FFB5B8 on channel @059FABE0 with type 65535
+[0222/104227:VERBOSE2:ipc_channel_win.cc(83)] sending message @03F4DBE8 on channel @059FABE0 with type 262230 (0 in queue)
+[0222/104227:VERBOSE2:ipc_channel_win.cc(418)] sent message @03F4DBE8 on channel @059FABE0 with type 262230
+[0222/104227:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/104227:VERBOSE2:ipc_channel_win.cc(83)] sending message @03F4DB88 on channel @059FABE0 with type 262230 (0 in queue)
+[0222/104227:VERBOSE2:ipc_channel_win.cc(418)] sent message @03F4DB88 on channel @059FABE0 with type 262230
+[0222/104227:VERBOSE2:ipc_channel_win.cc(83)] sending message @03F4DD08 on channel @059FABE0 with type 262230 (0 in queue)
+[0222/104227:VERBOSE2:ipc_channel_win.cc(418)] sent message @03F4DD08 on channel @059FABE0 with type 262230
+[0222/104541:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 3 4 T F F 1 1
+[0222/104541:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 0 4 T F F 1 1
+[0222/104541:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 0 4 T F F 1 1
+[0222/104541:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_ANIMATE T 0 1 4 T F F 1 1
+[0222/104541:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 1 4 T F F 1 1
+[0222/104541:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 2 4 T F F 1 1
+[0222/104541:VERBOSE2:ipc_channel_win.cc(418)] sent message @0BC0FC58 on channel @0BD22ED8 with type 65535
+[0222/104541:VERBOSE2:ipc_channel_win.cc(83)] sending message @0BC64FB0 on channel @0BD22ED8 with type 262230 (0 in queue)
+[0222/104541:VERBOSE2:ipc_channel_win.cc(418)] sent message @0BC64FB0 on channel @0BD22ED8 with type 262230
+[0222/104541:VERBOSE2:ipc_channel_win.cc(83)] sending message @059D4AB8 on channel @03F277E8 with type 786935 (0 in queue)
+[0222/104541:VERBOSE2:ipc_channel_win.cc(418)] sent message @059D4AB8 on channel @03F277E8 with type 786935
+[0222/104544:VERBOSE2:ipc_channel_win.cc(418)] sent message @05B06C48 on channel @05B6A6A8 with type 65535
+[0222/104544:VERBOSE2:ipc_channel_win.cc(83)] sending message @03F4DCA8 on channel @05B6A6A8 with type 262230 (0 in queue)
+[0222/104544:VERBOSE2:ipc_channel_win.cc(418)] sent message @03F4DCA8 on channel @05B6A6A8 with type 262230
+[0222/104546:VERBOSE2:ipc_channel_win.cc(83)] sending message @0BC650D0 on channel @05B6A6A8 with type 262230 (0 in queue)
+[0222/104546:VERBOSE2:ipc_channel_win.cc(418)] sent message @0BC650D0 on channel @05B6A6A8 with type 262230
+[0222/104615:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/104616:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/104617:VERBOSE2:ipc_channel_win.cc(418)] sent message @03E50AA8 on channel @06196848 with type 65535
+[0222/104617:VERBOSE2:ipc_channel_win.cc(83)] sending message @03E31280 on channel @06196848 with type 262230 (0 in queue)
+[0222/104617:VERBOSE2:ipc_channel_win.cc(418)] sent message @03E31280 on channel @06196848 with type 262230
+[0222/104617:VERBOSE2:ipc_channel_win.cc(83)] sending message @03E31220 on channel @061EF920 with type 262230 (0 in queue)
+[0222/104617:VERBOSE2:ipc_channel_win.cc(418)] sent message @03E31220 on channel @061EF920 with type 262230
+[0222/104617:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 0
+[0222/104617:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 0
+[0222/104617:VERBOSE2:ipc_channel_win.cc(83)] sending message @03E31280 on channel @061EF920 with type 262230 (0 in queue)
+[0222/104617:VERBOSE2:ipc_channel_win.cc(418)] sent message @03E31280 on channel @061EF920 with type 262230
+[0222/104617:VERBOSE2:ipc_channel_win.cc(83)] sending message @03E313A0 on channel @061EF920 with type 262230 (0 in queue)
+[0222/104617:VERBOSE2:ipc_channel_win.cc(418)] sent message @03E313A0 on channel @061EF920 with type 262230
+[0222/104644:FATAL:browser_main.cc(153)] Check failed: 0 == CefBrowserContext::DebugObjCt (0 vs. 1)
+Backtrace:
+	cef_time_to_timet [0x1063EE21+2909233]
+	cef_time_to_timet [0x105618FF+2002703]
+	cef_time_to_timet [0x10473481+1026705]
+	SetCrashKeyValueImpl [0x13709D10+6181552]
+	SetCrashKeyValueImpl [0x1366A9B5+5529429]
+	cef_time_to_timet [0x103B5895+249509]
+	cef_time_to_timet [0x105FD155+2639717]
+	cef_time_to_timet [0x1058398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/104648:FATAL:gpu_process_transport_factory.cc(112)] Check failed: per_compositor_data_.empty(). 
+Backtrace:
+	cef_time_to_timet [0x1063EE21+2909233]
+	cef_time_to_timet [0x105618FF+2002703]
+	SetCrashKeyValueImpl [0x13AD2BF0+10150288]
+	SetCrashKeyValueImpl [0x13AD51C6+10159974]
+	SetCrashKeyValueImpl [0x13674D62+5571330]
+	SetCrashKeyValueImpl [0x13709FA7+6182215]
+	SetCrashKeyValueImpl [0x1366A9B5+5529429]
+	cef_time_to_timet [0x103B5895+249509]
+	cef_time_to_timet [0x105FD155+2639717]
+	cef_time_to_timet [0x1058398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/104651:FATAL:browser_main.cc(165)] Check failed: 0 == CefURLRequestContext::DebugObjCt (0 vs. 1)
+Backtrace:
+	cef_time_to_timet [0x1063EE21+2909233]
+	cef_time_to_timet [0x105618FF+2002703]
+	cef_time_to_timet [0x10473379+1026441]
+	SetCrashKeyValueImpl [0x1370AD25+6185669]
+	SetCrashKeyValueImpl [0x1366A9B5+5529429]
+	cef_time_to_timet [0x103B5895+249509]
+	cef_time_to_timet [0x105FD155+2639717]
+	cef_time_to_timet [0x1058398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/110207:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/110212:ERROR:ssl_client_socket_openssl.cc(1014)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0222/110212:ERROR:ssl_client_socket_openssl.cc(1014)] handshake failed; returned -1, SSL error code 1, net_error -101
+[0222/110238:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/110341:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/110358:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/110358:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/110358:WARNING:channel.cc(315)] RawChannel write error
+[0222/110358:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/110420:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/110421:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/110430:ERROR:scoped_com_initializer.h(58)] Multiple CoInitialize() calls for thread 5232
+[0222/110430:VERBOSE2:ipc_channel_win.cc(418)] sent message @05EC6110 on channel @05F2B6D8 with type 65535
+[0222/110430:VERBOSE2:ipc_channel_win.cc(83)] sending message @046E60E8 on channel @05F2B6D8 with type 262230 (0 in queue)
+[0222/110430:VERBOSE2:ipc_channel_win.cc(418)] sent message @046E60E8 on channel @05F2B6D8 with type 262230
+[0222/110433:VERBOSE2:ipc_channel_win.cc(83)] sending message @05F403E0 on channel @05F2B6D8 with type 262230 (0 in queue)
+[0222/110433:VERBOSE2:ipc_channel_win.cc(418)] sent message @05F403E0 on channel @05F2B6D8 with type 262230
+[0222/110455:FATAL:browser_main.cc(153)] Check failed: 0 == CefBrowserContext::DebugObjCt (0 vs. 1)
+Backtrace:
+	cef_time_to_timet [0x10B9EE21+2909233]
+	cef_time_to_timet [0x10AC18FF+2002703]
+	cef_time_to_timet [0x109D3481+1026705]
+	SetCrashKeyValueImpl [0x13C69D10+6181552]
+	SetCrashKeyValueImpl [0x13BCA9B5+5529429]
+	cef_time_to_timet [0x10915895+249509]
+	cef_time_to_timet [0x10B5D155+2639717]
+	cef_time_to_timet [0x10AE398B+2142107]
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/110458:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10B9EE21+2909233]
+	cef_time_to_timet [0x10AC18FF+2002703]
+	cef_time_to_timet [0x111FD031+9586241]
+	IsSandboxedProcess [0x170085C7+845911]
+	SetCrashKeyValueImpl [0x158405B4+35371860]
+	cef_string_list_value [0x10835AAF+159951]
+	cef_string_list_value [0x10834F77+157079]
+	cef_initialize [0x1076AC58+504]
+	CefInitialize [0x0018B260+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00180C03+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x0022916D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x002273EF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x002271AD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/110458:FATAL:url_util.cc(378)] Check failed: !standard_schemes_locked. Trying to add a standard scheme after the list has been locked.
+Backtrace:
+	cef_time_to_timet [0x10B9EE21+2909233]
+	cef_time_to_timet [0x10AC18FF+2002703]
+	cef_time_to_timet [0x111FD031+9586241]
+	IsSandboxedProcess [0x170085C7+845911]
+	SetCrashKeyValueImpl [0x158405B4+35371860]
+	cef_string_list_value [0x10835AAF+159951]
+	cef_string_list_value [0x10834F77+157079]
+	cef_initialize [0x1076AC58+504]
+	CefInitialize [0x0018B260+432] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:167)
+	main [0x00180C03+307] (e:\gitroom\developqt\qtcef\qtcef\main.cpp:61)
+	WinMain [0x0022916D+173] (c:\work\build\qt5_workdir\w\s\qtbase\src\winmain\qtmain_win.cpp:113)
+	__tmainCRTStartup [0x002273EF+575] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	WinMainCRTStartup [0x002271AD+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/110512:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/110528:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/110528:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/110528:WARNING:channel.cc(315)] RawChannel write error
+[0222/110528:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/110638:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/110654:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/110654:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/110654:WARNING:channel.cc(315)] RawChannel write error
+[0222/110654:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/110658:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/110708:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/110738:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/110742:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/110742:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/110742:WARNING:channel.cc(315)] RawChannel write error
+[0222/110742:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/110824:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/111237:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/111238:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/111254:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/111259:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/111259:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 2147483656, remote ID 9)
+[0222/111259:WARNING:channel.cc(315)] RawChannel write error
+[0222/111259:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/111259:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/111259:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 2147483648, remote ID 2)
+[0222/111259:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/112120:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/112125:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/112125:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/112125:WARNING:channel.cc(315)] RawChannel write error
+[0222/112148:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/112547:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/112551:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/112551:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 2147483648, remote ID 2)
+[0222/112551:WARNING:channel.cc(315)] RawChannel write error
+[0222/112621:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/112625:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/112632:VERBOSE2:ipc_channel_win.cc(418)] sent message @046E7538 on channel @06A5E050 with type 65535
+[0222/112632:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/112632:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/112632:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/112632:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/112632:VERBOSE2:ipc_channel_win.cc(83)] sending message @0466E7C8 on channel @06A5E050 with type 262230 (0 in queue)
+[0222/112632:VERBOSE2:ipc_channel_win.cc(418)] sent message @0466E7C8 on channel @06A5E050 with type 262230
+[0222/112635:VERBOSE2:ipc_channel_win.cc(83)] sending message @0466EBE8 on channel @06A5E050 with type 262230 (0 in queue)
+[0222/112635:VERBOSE2:ipc_channel_win.cc(418)] sent message @0466EBE8 on channel @06A5E050 with type 262230
+[0222/112638:FATAL:hwnd_message_handler.cc(1089)] Check failed: IsTopLevelWindow(hwnd()). 
+Backtrace:
+	cef_time_to_timet [0x1061EE21+2909233]
+	cef_time_to_timet [0x105418FF+2002703]
+	SetCrashKeyValueImpl [0x158A0EF6+41534614]
+	SetCrashKeyValueImpl [0x1589D519+41519801]
+	SetCrashKeyValueImpl [0x158A43BB+41548123]
+	SetCrashKeyValueImpl [0x158A09A7+41533255]
+	cef_time_to_timet [0x12A18581+40631185]
+	cef_time_to_timet [0x12A160AB+40621755]
+	gapfnScSendMessage [0x76D562FA+818]
+	GetThreadDesktop [0x76D56D3A+215]
+	GetMessageExtraInfo [0x76D7EE50+218]
+	gapfnScSendMessage [0x76D56A8C+2756]
+	gapfnScSendMessage [0x76D56AE9+2849]
+	SetCrashKeyValueImpl [0x136582C9+5585001]
+	SetCrashKeyValueImpl [0x136550CB+5572203]
+	gapfnScSendMessage [0x76D562FA+818]
+	GetThreadDesktop [0x76D56D3A+215]
+	GetThreadDesktop [0x76D56DE8+389]
+	GetThreadDesktop [0x76D56E44+481]
+	KiUserCallbackDispatcher [0x7725010A+46]
+	PeekMessageW [0x76D60751+407]
+	cef_time_to_timet [0x1065CFE7+3163639]
+	cef_time_to_timet [0x1065BE81+3159185]
+	cef_time_to_timet [0x1065D852+3165794]
+	cef_time_to_timet [0x1065D7BC+3165644]
+	cef_time_to_timet [0x1056C307+2177303]
+	cef_time_to_timet [0x105DB006+2631190]
+	cef_time_to_timet [0x1056C1BB+2176971]
+	cef_time_to_timet [0x1037FD26+160566]
+	cef_string_list_value [0x102B5285+157861]
+	cef_run_message_loop [0x101EC398+8]
+	CefRunMessageLoop [0x009CA20C+12] (e:\gitroom\developqt\qtcef\libcef_dll\wrapper\libcef_dll_wrapper.cc:286)
+	wWinMain [0x009ADF8B+235] (e:\gitroom\developqt\qtcef\cefsimple\cefsimple_win.cc:75)
+	__tmainCRTStartup [0x00A676EC+540] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:618)
+	wWinMainCRTStartup [0x00A6782D+13] (f:\dd\vctools\crt\crtw32\dllstuff\crtexe.c:466)
+	BaseThreadInitThunk [0x76B1337A+18]
+	RtlInitializeExceptionChain [0x77279882+99]
+	RtlInitializeExceptionChain [0x77279855+54]
+
+[0222/112657:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/112657:ERROR:singleton_hwnd.cc(43)] Cannot create windows on non-UI thread!
+[0222/112659:VERBOSE2:ipc_channel_win.cc(83)] sending message @0427DEC8 on channel @07256658 with type 262230 (0 in queue)
+[0222/112659:VERBOSE2:ipc_channel_win.cc(418)] sent message @0427DEC8 on channel @07256658 with type 262230
+[0222/112700:VERBOSE2:ipc_channel_win.cc(83)] sending message @0427DE08 on channel @07256658 with type 262230 (0 in queue)
+[0222/112700:VERBOSE2:ipc_channel_win.cc(418)] sent message @0427DE08 on channel @07256658 with type 262230
+[0222/112700:VERBOSE2:ipc_channel_win.cc(83)] sending message @0427DF28 on channel @07256658 with type 262230 (0 in queue)
+[0222/112700:VERBOSE2:ipc_channel_win.cc(418)] sent message @0427DF28 on channel @07256658 with type 262230
+[0222/112700:VERBOSE2:ipc_channel_win.cc(83)] sending message @0427DF28 on channel @07256658 with type 262230 (0 in queue)
+[0222/112700:VERBOSE2:ipc_channel_win.cc(418)] sent message @0427DF28 on channel @07256658 with type 262230
+[0222/112701:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/112701:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/112701:WARNING:channel.cc(315)] RawChannel write error
+[0222/133735:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/133743:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_PREPARE_TILES T 0 3 4 T F F 1 1
+[0222/133743:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 3 4 T F F 1 1
+[0222/133743:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 0 4 T F F 1 1
+[0222/133743:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 0 4 T F F 1 0
+[0222/133811:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/133811:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/133811:WARNING:channel.cc(315)] RawChannel write error
+[0222/133821:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/133826:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/133826:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/133826:WARNING:channel.cc(315)] RawChannel write error
+[0222/133939:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/133945:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/133945:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/133945:WARNING:channel.cc(315)] RawChannel write error
+[0222/134004:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/134010:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/134010:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/134010:WARNING:channel.cc(315)] RawChannel write error
+[0222/134441:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/134444:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_PREPARE_TILES F 0 3 1 F F F 1 1
+[0222/134451:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/134451:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/134451:WARNING:channel.cc(315)] RawChannel write error
+[0222/134604:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_ACTIVATE_SYNC_TREE T 0 2 4 T T F 1 1
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 2 0 F F T 1 1
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_PREPARE_TILES T 0 3 0 F F T 1 1
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 3 0 F F T 1 1
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 0 0 F F T 1 1
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE T 0 0 0 F F T 1 0
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_ANIMATE T 0 1 0 F F T 1 0
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_SEND_BEGIN_MAIN_FRAME T 0 1 0 F F T 1 0
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F T 1 0
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F T 1 0
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_DRAW_AND_SWAP_IF_POSSIBLE F 0 3 1 F F T 1 0
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_PREPARE_TILES F 0 3 1 F F F 1 1
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 1
+[0222/134607:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 1
+[0222/135624:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/135625:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/135627:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135629:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 4 T F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 4 T F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 4 T F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 4 T F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 4 T F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_ACTIVATE_SYNC_TREE F 0 2 4 T T F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 0 F F T 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_ANIMATE F 0 3 0 F F T 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_DRAW_AND_SWAP_IF_POSSIBLE F 0 3 0 F F T 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_PREPARE_TILES F 0 3 0 F F F 1 1
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 0 F F F 1 1
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 1
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 0 F F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 0 F F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 0 F F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0222/135638:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0222/135638:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/135638:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/135641:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/135718:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/135742:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/135742:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/135742:WARNING:channel.cc(315)] RawChannel write error
+[0222/135742:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/135745:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 
+[0222/142005:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/142010:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/142010:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/142010:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 2147483648, remote ID 2)
+[0222/142010:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/142636:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0222/142641:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 0
+[0222/142644:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0222/142644:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0222/142644:WARNING:channel.cc(315)] RawChannel write error
+[0222/142644:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0222/142645:FATAL:content_main_runner.cc(739)] Check failed: InitializeSandbox(params.sandbox_info). 

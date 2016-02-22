@@ -41,13 +41,13 @@ int main(int argc, char *argv[])
 	// that share the same executable. This function checks the command-line and,
 	// if this is a sub-process, executes the appropriate logic.
 // 	QMessageBox::about(NULL, "main", "2");
-// 	int exit_code = CefExecuteProcess(main_args, app.get(), sandbox_info);
+	int exit_code = CefExecuteProcess(main_args, app.get(), sandbox_info);
 // 	// The sub-process has completed so return here.
 // 	QMessageBox::about(NULL, "main", QString("%1").arg(exit_code));
 // 
-// 	if (exit_code >= 0) {
+	if (exit_code >= 0) {
 // 		QMessageBox::about(NULL, "main", "3");		return 0;
-// 	}
+	}
 // 	QMessageBox::about(NULL, "main", "4");
 	// Specify CEF global settings here.
 	CefSettings settings;
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 	settings.no_sandbox = true;
 #endif
 	settings.multi_threaded_message_loop = true;
-	settings.single_process = true;
+// 	settings.single_process = true;
 	// Initialize CEF.
 	CefInitialize(main_args, settings, app.get(), sandbox_info);
 
