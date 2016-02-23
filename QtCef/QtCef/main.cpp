@@ -10,8 +10,32 @@
 #include <QMessageBox>
 #include "cefsimple/simple_handler.h"
 
+bool IsSubprocess(int & argc, char ** argv)
+{
+	std::vector<std::string> argVector(argv, argv + argc);
+
+	for (auto i = 0; i < argc; ++i) {
+		if (argVector[i].find("--type") != std::string::npos) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+int RunCefSubprocess(int & argc, char ** argv)
+{
+	CefMainArgs cefMainArgs(GetModuleHandle(nullptr));
+
+	return CefExecuteProcess(cefMainArgs, nullptr, nullptr);
+}
+
 int main(int argc, char *argv[])
 {
+	if (IsSubprocess(argc, argv)) {
+// 		QMessageBox::about(NULL, "1", "2");
+		return RunCefSubprocess(argc, argv);
+	}
 // 	argc = 2;
 // 	argv[1] = "--ppapi-flash-path=plugins\\pepflashplayer.dll";
 	QApplication a(argc, argv);
@@ -41,13 +65,13 @@ int main(int argc, char *argv[])
 	// that share the same executable. This function checks the command-line and,
 	// if this is a sub-process, executes the appropriate logic.
 // 	QMessageBox::about(NULL, "main", "2");
-	int exit_code = CefExecuteProcess(main_args, app.get(), sandbox_info);
+// 	int exit_code = CefExecuteProcess(main_args, app.get(), sandbox_info);
 // 	// The sub-process has completed so return here.
 // 	QMessageBox::about(NULL, "main", QString("%1").arg(exit_code));
 // 
-	if (exit_code >= 0) {
-// 		QMessageBox::about(NULL, "main", "3");		return 0;
-	}
+// 	if (exit_code >= 0) {
+// 		QMessageBox::about(NULL, "main", "3");// 		return 0;
+// 	}
 // 	QMessageBox::about(NULL, "main", "4");
 	// Specify CEF global settings here.
 	CefSettings settings;
@@ -65,7 +89,9 @@ int main(int argc, char *argv[])
 
 	int result = a.exec();
 	// Shut down CEF.
+#ifndef _DEBUG
 	CefShutdown();
-
+#endif // _DEBUG
+	
 	return result;
 }

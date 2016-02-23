@@ -11,6 +11,8 @@
 #include "include/cef_app.h"
 #include "include/wrapper/cef_closure_task.h"
 #include "include/wrapper/cef_helpers.h"
+#include <QMessageBox>
+#include <newcefwin.h>
 
 namespace {
 
@@ -24,27 +26,25 @@ void ModifyZoom(CefRefPtr<CefBrowser> browser, double delta) {
 	browser->GetHost()->SetZoomLevel(
 		browser->GetHost()->GetZoomLevel() + delta);
 }
-
-SimpleHandler* g_instance = NULL;
-
 }  // namespace
 
+SimpleHandler *SimpleHandler::instance = NULL;
 SimpleHandler::SimpleHandler()
     : is_closing_(false) {
 }
 
 SimpleHandler::~SimpleHandler() {
-  g_instance = NULL;
+  instance = NULL;
 }
 
 // static
 SimpleHandler* SimpleHandler::GetInstance() {
-	if (g_instance == NULL)
+	if (instance == NULL)
 	{
-		g_instance = new SimpleHandler();
+		instance = new SimpleHandler();
 	}
 	
-  return g_instance;
+  return instance;
 }
 
 // CefLifeSpanHandler methods:
@@ -74,6 +74,12 @@ void SimpleHandler::OnAfterCreated(CefRefPtr<CefBrowser> browser) {
   // 可以控制鼠标形状是否可以改变
 //   browser->GetHost()->SetMouseCursorChangeDisabled(true);
   // Add to the list of existing browsers.
+  int browserIdentifier = browser->GetIdentifier();
+  CefWindowHandle handle = browser->GetHost()->GetWindowHandle();
+  HWND parentWnd = GetParent(handle);
+  emit creatBrowserSuccess(parentWnd, browserIdentifier);
+
+  // 将browser保存起来
   browser_list_.push_back(browser);
 }
 
@@ -191,10 +197,17 @@ bool SimpleHandler::GetAuthCredentials(CefRefPtr<CefBrowser> browser,
 	const CefString& realm,
 	const CefString& scheme,
 	CefRefPtr<CefAuthCallback> callback) {
-	QString userName = "";
-	QString userPassword = "";
-	emit showAuthorityDialog(userName, userPassword);
-	callback->Continue(userName.toStdString(), userPassword.toStdString());
+	// 因Qt线程问题，无法实现同步弹出模态窗口，所以做成异步实现
+	if (m_userName.isEmpty())
+	{
+		emit showAuthorityDialog(browser->GetIdentifier(), m_userName, m_userPassword);
+		return false;
+	}
+	
+	callback->Continue(m_userName.toStdWString(), m_userPassword.toStdWString());
+	// 返回用户名密码后，清空数据
+	m_userName = QString();
+	m_userPassword = QString();
 	return true;
 }
 
@@ -231,11 +244,45 @@ void SimpleHandler::OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
 	frame->LoadURL("www.baidu.com");
 }
 
-void SimpleHandler::setZoom(double delta)
+// 获得指定浏览器
+CefRefPtr<CefBrowser> SimpleHandler::GetBrowser(int browserIdentifier)
 {
 	BrowserList::const_iterator it = browser_list_.begin();
 	for (; it != browser_list_.end(); ++it)
 	{
-		ModifyZoom((*it), delta);
+		CefRefPtr<CefBrowser> browser = (*it);
+		if (browser->GetIdentifier() == browserIdentifier)
+		{
+			return browser;
+		}
 	}
+	return NULL;
+}
+
+// 缩放显示页面
+void SimpleHandler::SetZoom(int browserIdentifier, double delta)
+{
+	CefRefPtr<CefBrowser> browser = GetBrowser(browserIdentifier);
+	if (browser.get())
+	{
+		ModifyZoom(browser, delta);
+	}
+}
+
+// 刷新浏览器
+void SimpleHandler::Refresh(int browserIdentifier)
+{
+	CefRefPtr<CefBrowser> browser = GetBrowser(browserIdentifier);
+	if (browser.get())
+	{
+		browser->Reload();
+	}
+}
+
+// 授权用户名密码，并刷新
+void SimpleHandler::RefreshWithAuthInfo(int browserIdentifier, QString userName, QString userPassword)
+{
+	m_userName = userName;
+	m_userPassword = userPassword;
+	Refresh(browserIdentifier);
 }

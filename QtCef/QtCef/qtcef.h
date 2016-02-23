@@ -12,6 +12,9 @@ public:
 	QtCef(QWidget *parent = 0);
 	~QtCef();
 
+protected:
+	void closeEvent(QCloseEvent *e);
+
 private slots:
 	// 放大
 	void OnZoomIn();
@@ -23,10 +26,16 @@ private slots:
 	void OnNewWin();
 
 	// 显示授权对话框
-	void OnShowAuthorityDialog(QString userName, QString userPassword);
+	void OnShowAuthorityDialog(int browserIdentifier, QString userName, QString userPassword);
+
+	// 浏览器创建成功
+	void OnCreateBrowserSuccess(HWND hWnd, int browserIdentifier);
 
 private:
 	Ui::QtCefClass ui;
+
+	// 浏览器标识
+	int m_browserIdentifier;
 };
 
 #endif // QTCEF_H

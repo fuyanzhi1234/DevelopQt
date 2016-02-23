@@ -4,8 +4,19 @@
 #include "include/cef_sandbox_win.h"
 #include "cefsimple/simple_handler.h"
 
+NewCefWin *NewCefWin::instance = NULL;
+NewCefWin *NewCefWin::getInstance()
+{
+	if (!instance)
+	{
+		instance = new NewCefWin(NULL);
+	}
+	return instance;
+}
+
+
 NewCefWin::NewCefWin(QWidget *parent)
-	: QWidget(parent)
+	: QDialog(parent)
 {
 	ui.setupUi(this);
 

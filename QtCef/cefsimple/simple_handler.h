@@ -107,19 +107,36 @@ public:
 
 	void OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
 		TerminationStatus status) OVERRIDE;
+private:
 
 signals:
 	// 显示授权对话框
-	void showAuthorityDialog(QString userName, QString userPassword);
+	void showAuthorityDialog(int browserIdentifier, QString userName, QString userPassword);
+
+	// 创建成功后通知创建者
+	void creatBrowserSuccess(HWND hWnd, int browserIdentifier);
+
 public:
-	void setZoom(double delta);
+	// 获得指定浏览器
+	CefRefPtr<CefBrowser> GetBrowser(int browserIdentifier);
+	// 缩放显示页面
+	void SetZoom(int browserIdentifier, double delta);
+	// 刷新浏览器
+	void Refresh(int browserIdentifier);
+	// 授权用户名密码，并刷新
+	void RefreshWithAuthInfo(int browserIdentifier, QString userName, QString userPassword);
 
 private:
+	// single instance
+	static SimpleHandler *instance;
 	// List of existing browser windows. Only accessed on the CEF UI thread.
 	typedef std::list<CefRefPtr<CefBrowser> > BrowserList;
 	BrowserList browser_list_;
 
 	bool is_closing_;
+
+	QString m_userName;
+	QString m_userPassword;
 
 	// Include the default reference counting implementation.
 	IMPLEMENT_REFCOUNTING(SimpleHandler);
