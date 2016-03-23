@@ -21,6 +21,7 @@ NewCefWin::NewCefWin(QWidget *parent)
 	ui.setupUi(this);
 
 	setAttribute(Qt::WA_DeleteOnClose);
+	setWindowFlags(windowFlags() | Qt::FramelessWindowHint);
 
 	// Information used when creating the native window.
 	CefWindowInfo window_info;
@@ -32,9 +33,9 @@ NewCefWin::NewCefWin(QWidget *parent)
 	RECT rect;
 	rect.left = 0;
 	rect.top = 0;
-	rect.right = 1000;
-	rect.bottom = 500;
-	window_info.SetAsChild((HWND)this->winId(), rect);
+	rect.right = ui.page->geometry().width();
+	rect.bottom = ui.page->geometry().height();
+	window_info.SetAsChild((HWND)ui.page->winId(), rect);
 #endif
 
 	// SimpleHandler implements browser-level callbacks.

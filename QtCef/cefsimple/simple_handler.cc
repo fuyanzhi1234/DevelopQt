@@ -2,7 +2,7 @@
 // reserved. Use of this source code is governed by a BSD-style license that
 // can be found in the LICENSE file.
 
-#include "cefsimple/simple_handler.h"
+#include "simple_handler.h"
 
 #include <sstream>
 #include <string>
@@ -12,29 +12,29 @@
 #include "include/wrapper/cef_closure_task.h"
 #include "include/wrapper/cef_helpers.h"
 #include <QMessageBox>
-#include <newcefwin.h>
+#include <QDebug>
 
 namespace {
 
-void ModifyZoom(CefRefPtr<CefBrowser> browser, double delta) {
-	if (!CefCurrentlyOn(TID_UI)) {
-		// Execute on the UI thread.
-		CefPostTask(TID_UI, base::Bind(&ModifyZoom, browser, delta));
-		return;
-	}
+	void ModifyZoom(CefRefPtr<CefBrowser> browser, double delta) {
+		if (!CefCurrentlyOn(TID_UI)) {
+			// Execute on the UI thread.
+			CefPostTask(TID_UI, base::Bind(&ModifyZoom, browser, delta));
+			return;
+		}
 
-	browser->GetHost()->SetZoomLevel(
-		browser->GetHost()->GetZoomLevel() + delta);
-}
+		browser->GetHost()->SetZoomLevel(
+			browser->GetHost()->GetZoomLevel() + delta);
+	}
 }  // namespace
 
 SimpleHandler *SimpleHandler::instance = NULL;
 SimpleHandler::SimpleHandler()
-    : is_closing_(false) {
+: is_closing_(false) {
 }
 
 SimpleHandler::~SimpleHandler() {
-  instance = NULL;
+	instance = NULL;
 }
 
 // static
@@ -43,8 +43,8 @@ SimpleHandler* SimpleHandler::GetInstance() {
 	{
 		instance = new SimpleHandler();
 	}
-	
-  return instance;
+
+	return instance;
 }
 
 // CefLifeSpanHandler methods:
@@ -69,88 +69,115 @@ bool SimpleHandler::OnBeforePopup(
 }
 
 void SimpleHandler::OnAfterCreated(CefRefPtr<CefBrowser> browser) {
-  CEF_REQUIRE_UI_THREAD();
+	CEF_REQUIRE_UI_THREAD();
 
-  // 可以控制鼠标形状是否可以改变
-//   browser->GetHost()->SetMouseCursorChangeDisabled(true);
-  // Add to the list of existing browsers.
-  int browserIdentifier = browser->GetIdentifier();
-  CefWindowHandle handle = browser->GetHost()->GetWindowHandle();
-  HWND parentWnd = GetParent(handle);
-  emit creatBrowserSuccess(parentWnd, browserIdentifier);
+	// 可以控制鼠标形状是否可以改变
+	//   browser->GetHost()->SetMouseCursorChangeDisabled(true);
+	// Add to the list of existing browsers.
+	int browserIdentifier = browser->GetIdentifier();
+	CefWindowHandle browserHwnd = browser->GetHost()->GetWindowHandle();
+	HWND parentHwnd = GetParent(browserHwnd);
+	emit creatBrowserSuccess(parentHwnd, browserHwnd, browserIdentifier);
 
-  // 将browser保存起来
-  browser_list_.push_back(browser);
+	// 将browser保存起来
+	browser_list_.push_back(browser);
 }
 
 bool SimpleHandler::DoClose(CefRefPtr<CefBrowser> browser) {
-  CEF_REQUIRE_UI_THREAD();
+	CEF_REQUIRE_UI_THREAD();
 
-  // Closing the main window requires special handling. See the DoClose()
-  // documentation in the CEF header for a detailed destription of this
-  // process.
-  if (browser_list_.size() == 1) {
-    // Set a flag to indicate that the window close should be allowed.
-    is_closing_ = true;
-  }
+	// Closing the main window requires special handling. See the DoClose()
+	// documentation in the CEF header for a detailed destription of this
+	// process.
+	if (browser_list_.size() == 1) {
+		// Set a flag to indicate that the window close should be allowed.
+		is_closing_ = true;
+	}
 
-  // Allow the close. For windowed browsers this will result in the OS close
-  // event being sent.
-  return false;
+	// Allow the close. For windowed browsers this will result in the OS close
+	// event being sent.
+	return false;
 }
 
 void SimpleHandler::OnBeforeClose(CefRefPtr<CefBrowser> browser) {
-  CEF_REQUIRE_UI_THREAD();
+	CEF_REQUIRE_UI_THREAD();
 
-  // Remove from the list of existing browsers.
-  BrowserList::iterator bit = browser_list_.begin();
-  for (; bit != browser_list_.end(); ++bit) {
-    if ((*bit)->IsSame(browser)) {
-      browser_list_.erase(bit);
-      break;
-    }
-  }
+	// Remove from the list of existing browsers.
+	BrowserList::iterator bit = browser_list_.begin();
+	for (; bit != browser_list_.end(); ++bit) {
+		if ((*bit)->IsSame(browser)) {
+			browser_list_.erase(bit);
+			break;
+		}
+	}
 
-  if (browser_list_.empty()) {
-    // All browser windows have closed. Quit the application message loop.
-//     CefQuitMessageLoop();
-  }
+	if (browser_list_.empty()) {
+		// All browser windows have closed. Quit the application message loop.
+		//     CefQuitMessageLoop();
+	}
+}
+
+void SimpleHandler::OnLoadingStateChange(CefRefPtr<CefBrowser> browser,
+	bool isLoading,
+	bool canGoBack,
+	bool canGoForward)
+{
+	qDebug() << "OnLoadingStateChange : " << isLoading << ", " << canGoBack << ", " << canGoForward;
+}
+
+void SimpleHandler::OnLoadStart(CefRefPtr<CefBrowser> browser,
+	CefRefPtr<CefFrame> frame)
+{
+	if (frame->IsMain())
+	{
+		emit loadStart(browser->GetIdentifier());
+	}
+}
+
+void SimpleHandler::OnLoadEnd(CefRefPtr<CefBrowser> browser,
+	CefRefPtr<CefFrame> frame,
+	int httpStatusCode)
+{
+	if (frame->IsMain())
+	{
+		emit loadEnd(browser->GetIdentifier(), httpStatusCode);
+	}
 }
 
 void SimpleHandler::OnLoadError(CefRefPtr<CefBrowser> browser,
-                                CefRefPtr<CefFrame> frame,
-                                ErrorCode errorCode,
-                                const CefString& errorText,
-                                const CefString& failedUrl) {
-  CEF_REQUIRE_UI_THREAD();
+	CefRefPtr<CefFrame> frame,
+	ErrorCode errorCode,
+	const CefString& errorText,
+	const CefString& failedUrl) {
+	CEF_REQUIRE_UI_THREAD();
 
-  // Don't display an error for downloaded files.
-  if (errorCode == ERR_ABORTED)
-    return;
+	// Don't display an error for downloaded files.
+	if (errorCode == ERR_ABORTED)
+		return;
 
-  // Display a load error message.
-  std::stringstream ss;
-  ss << "<html><body bgcolor=\"white\">"
-        "<h2>Failed to load URL " << std::string(failedUrl) <<
-        " with error " << std::string(errorText) << " (" << errorCode <<
-        ").</h2></body></html>";
-  frame->LoadString(ss.str(), failedUrl);
+	// Display a load error message.
+	std::stringstream ss;
+	ss << "<html><body bgcolor=\"white\">"
+		"<h2>Failed to load URL " << std::string(failedUrl) <<
+		" with error " << std::string(errorText) << " (" << errorCode <<
+		").</h2></body></html>";
+	frame->LoadString(ss.str(), failedUrl);
 }
 
 void SimpleHandler::CloseAllBrowsers(bool force_close) {
-  if (!CefCurrentlyOn(TID_UI)) {
-    // Execute on the UI thread.
-    CefPostTask(TID_UI,
-        base::Bind(&SimpleHandler::CloseAllBrowsers, this, force_close));
-    return;
-  }
+	if (!CefCurrentlyOn(TID_UI)) {
+		// Execute on the UI thread.
+		CefPostTask(TID_UI,
+			base::Bind(&SimpleHandler::CloseAllBrowsers, this, force_close));
+		return;
+	}
 
-  if (browser_list_.empty())
-    return;
+	if (browser_list_.empty())
+		return;
 
-  BrowserList::const_iterator it = browser_list_.begin();
-  for (; it != browser_list_.end(); ++it)
-    (*it)->GetHost()->CloseBrowser(force_close);
+	BrowserList::const_iterator it = browser_list_.begin();
+	for (; it != browser_list_.end(); ++it)
+		(*it)->GetHost()->CloseBrowser(force_close);
 }
 
 // CefContextMenuHandler methods
@@ -161,7 +188,8 @@ void SimpleHandler::OnBeforeContextMenu(CefRefPtr<CefBrowser> browser,
 {
 	if (model)
 	{
-		model->Clear();
+		// 可以屏蔽鼠标右键
+// 		model->Clear();
 	}
 }
 
@@ -171,7 +199,7 @@ bool SimpleHandler::OnContextMenuCommand(CefRefPtr<CefBrowser> browser,
 	int command_id,
 	EventFlags event_flags)
 {
-	return true;
+	return false;
 }
 
 bool SimpleHandler::OnCertificateError(
@@ -203,7 +231,7 @@ bool SimpleHandler::GetAuthCredentials(CefRefPtr<CefBrowser> browser,
 		emit showAuthorityDialog(browser->GetIdentifier(), m_userName, m_userPassword);
 		return false;
 	}
-	
+
 	callback->Continue(m_userName.toStdWString(), m_userPassword.toStdWString());
 	// 返回用户名密码后，清空数据
 	m_userName = QString();
@@ -216,11 +244,11 @@ void SimpleHandler::OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
 	TerminationStatus status) {
 	CEF_REQUIRE_UI_THREAD();
 
-// 	message_router_->OnRenderProcessTerminated(browser);
+	// 	message_router_->OnRenderProcessTerminated(browser);
 
 	// Don't reload if there's no start URL, or if the crash URL was specified.
-// 	if (startup_url_.empty() || startup_url_ == "chrome://crash")
-// 		return;
+	// 	if (startup_url_.empty() || startup_url_ == "chrome://crash")
+	// 		return;
 
 	CefRefPtr<CefFrame> frame = browser->GetMainFrame();
 	std::string url = frame->GetURL();
@@ -230,18 +258,28 @@ void SimpleHandler::OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
 	if (url.empty())
 		return;
 
-// 	std::string start_url = startup_url_;
+	// 	std::string start_url = startup_url_;
 
 	// Convert URLs to lowercase for easier comparison.
-// 	std::transform(url.begin(), url.end(), url.begin(), tolower);
-// 	std::transform(start_url.begin(), start_url.end(), start_url.begin(),
-// 		tolower);
+	// 	std::transform(url.begin(), url.end(), url.begin(), tolower);
+	// 	std::transform(start_url.begin(), start_url.end(), start_url.begin(),
+	// 		tolower);
 
 	// Don't reload the URL that just resulted in termination.
-// 	if (url.find(start_url) == 0)
-// 		return;
+	// 	if (url.find(start_url) == 0)
+	// 		return;
 
 	frame->LoadURL("www.baidu.com");
+}
+
+// CefRenderHandler methods
+// 鼠标改变
+void SimpleHandler::OnCursorChange(CefRefPtr<CefBrowser> browser,
+	CefCursorHandle cursor,
+	CursorType type,
+	const CefCursorInfo& custom_cursor_info)
+{
+	qDebug() << "OnCursorChange :: CursorType : " << type;
 }
 
 // 获得指定浏览器
@@ -285,4 +323,36 @@ void SimpleHandler::RefreshWithAuthInfo(int browserIdentifier, QString userName,
 	m_userName = userName;
 	m_userPassword = userPassword;
 	Refresh(browserIdentifier);
+}
+
+QString SimpleHandler::getCurrentURL(int browserIdentifier)
+{
+	CefRefPtr<CefBrowser> browser = GetBrowser(browserIdentifier);
+	std::string curUrl = "";
+	if (browser.get())
+	{
+		curUrl = browser->GetMainFrame()->GetURL();
+	}
+	return QString::fromStdString(curUrl);
+}
+
+void SimpleHandler::stopLoad(int browserIdentifier)
+{
+	CefRefPtr<CefBrowser> browser = GetBrowser(browserIdentifier);
+	if (browser.get())
+	{
+		if (browser->IsLoading())
+		{
+			browser->StopLoad();
+		}
+	}
+}
+
+void SimpleHandler::loadURL(int browserIdentifier, QString url)
+{
+	CefRefPtr<CefBrowser> browser = GetBrowser(browserIdentifier);
+	if (browser.get())
+	{
+		browser->GetMainFrame()->LoadURL(url.toStdString());
+	}
 }

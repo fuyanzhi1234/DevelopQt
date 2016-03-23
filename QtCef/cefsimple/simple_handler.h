@@ -16,7 +16,8 @@ class SimpleHandler : public QObject,
 	public CefDisplayHandler,
 	public CefLifeSpanHandler,
 	public CefLoadHandler,
-	public CefRequestHandler {
+	public CefRequestHandler,
+	public CefRenderHandler {
 
 	Q_OBJECT
 
@@ -28,9 +29,9 @@ public:
 	static SimpleHandler* GetInstance();
 
 	// CefClient methods
-	virtual CefRefPtr<CefContextMenuHandler> GetContextMenuHandler() OVERRIDE{
-		return this;
-	}
+// 	virtual CefRefPtr<CefContextMenuHandler> GetContextMenuHandler() OVERRIDE{
+// 		return this;
+// 	}
 	virtual CefRefPtr<CefDisplayHandler> GetDisplayHandler() OVERRIDE{
 		return this;
 	}
@@ -41,6 +42,9 @@ public:
 		return this;
 	}
 	virtual CefRefPtr<CefRequestHandler> GetRequestHandler() OVERRIDE{
+		return this;
+	}
+	virtual CefRefPtr<CefRenderHandler> GetRenderHandler() OVERRIDE{
 		return this;
 	}
 
@@ -66,6 +70,18 @@ public:
 	virtual void OnBeforeClose(CefRefPtr<CefBrowser> browser) OVERRIDE;
 
 	// CefLoadHandler methods:
+	virtual void OnLoadingStateChange(CefRefPtr<CefBrowser> browser,
+		bool isLoading,
+		bool canGoBack,
+		bool canGoForward) OVERRIDE;
+
+	virtual void OnLoadStart(CefRefPtr<CefBrowser> browser,
+		CefRefPtr<CefFrame> frame) OVERRIDE;
+
+	virtual void OnLoadEnd(CefRefPtr<CefBrowser> browser,
+		CefRefPtr<CefFrame> frame,
+		int httpStatusCode) OVERRIDE;
+
 	virtual void OnLoadError(CefRefPtr<CefBrowser> browser,
 		CefRefPtr<CefFrame> frame,
 		ErrorCode errorCode,
@@ -107,14 +123,34 @@ public:
 
 	void OnRenderProcessTerminated(CefRefPtr<CefBrowser> browser,
 		TerminationStatus status) OVERRIDE;
+
+	// CefRenderHandler methods
+	virtual bool GetViewRect(CefRefPtr<CefBrowser> browser, CefRect& rect) { return false; }
+
+	virtual void OnPaint(CefRefPtr<CefBrowser> browser,
+		PaintElementType type,
+		const RectList& dirtyRects,
+		const void* buffer,
+		int width, int height) {};
+
+	virtual void OnCursorChange(CefRefPtr<CefBrowser> browser,
+		CefCursorHandle cursor,
+		CursorType type,
+		const CefCursorInfo& custom_cursor_info) OVERRIDE;
 private:
 
-signals:
+signals :
 	// 显示授权对话框
 	void showAuthorityDialog(int browserIdentifier, QString userName, QString userPassword);
 
-	// 创建成功后通知创建者
-	void creatBrowserSuccess(HWND hWnd, int browserIdentifier);
+		// 创建成功后通知创建者
+		void creatBrowserSuccess(HWND parentWnd, HWND browserWnd, int browserIdentifier);
+
+		// 开始加载
+		void loadStart(int browserIdentifier);
+
+		// 结束加载
+		void loadEnd(int browserIdentifier, int httpStatusCode);
 
 public:
 	// 获得指定浏览器
@@ -125,6 +161,28 @@ public:
 	void Refresh(int browserIdentifier);
 	// 授权用户名密码，并刷新
 	void RefreshWithAuthInfo(int browserIdentifier, QString userName, QString userPassword);
+
+	/*
+	获得浏览器当前访问的url
+	@Param int browserIdentifier : 浏览器标识
+	@Return : QString
+	*/
+	QString getCurrentURL(int browserIdentifier);
+
+	/*
+	停止加载网页
+	@Param int browserIdentifier : 浏览器标识
+	@Return void :
+	*/
+	void stopLoad(int browserIdentifier);
+
+	/*
+	加载网页
+	@Param int browserIdentifier : 浏览器标识
+	@Param QString url : 网站地址
+	@Return void :
+	*/
+	void loadURL(int browserIdentifier, QString url);
 
 private:
 	// single instance

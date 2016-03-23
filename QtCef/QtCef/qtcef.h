@@ -25,11 +25,14 @@ private slots:
 	// 新窗口
 	void OnNewWin();
 
+	// 打开网页
+	void OnGo();
+
 	// 显示授权对话框
 	void OnShowAuthorityDialog(int browserIdentifier, QString userName, QString userPassword);
 
 	// 浏览器创建成功
-	void OnCreateBrowserSuccess(HWND hWnd, int browserIdentifier);
+	void OnCreateBrowserSuccess(HWND parentHwnd, HWND browserHwnd, int browserIdentifier);
 
 private:
 	Ui::QtCefClass ui;

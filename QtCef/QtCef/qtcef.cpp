@@ -12,6 +12,8 @@ QtCef::QtCef(QWidget *parent)
 {
 	ui.setupUi(this);
 
+// 	setWindowFlags(windowFlags() | Qt::FramelessWindowHint);
+
 	NewCefWin::getInstance()->hide();
 
 	// Information used when creating the native window.
@@ -21,26 +23,27 @@ QtCef::QtCef(QWidget *parent)
 	// On Windows we need to specify certain flags that will be passed to
 	RECT rect;
 	rect.left = 0;
-	rect.top = 0;
-	rect.right = 1000;
-	rect.bottom = 500;
+	rect.top = 50;
+	rect.right = 1024;
+	rect.bottom = 818;
 	window_info.SetAsChild((HWND)this->winId(), rect);
 #endif
 
 	// Specify CEF browser settings here.
 	CefBrowserSettings browser_settings;
 
-	std::string url = "www.baidu.com";
+	std::string url = "https://www.baidu.com";
 	// Create the first browser window.
 	CefBrowserHost::CreateBrowser(window_info, SimpleHandler::GetInstance(), url,
 		browser_settings, NULL);
 	connect(ui.pushButton_zoom_in, SIGNAL(clicked()), SLOT(OnZoomIn()));
 	connect(ui.pushButton_zoom_out, SIGNAL(clicked()), SLOT(OnZoomOut()));
 	connect(ui.pushButton_newwin, SIGNAL(clicked()), SLOT(OnNewWin()));
+	connect(ui.pushButton_go, SIGNAL(clicked()), SLOT(OnGo()));
 
 	connect(SimpleHandler::GetInstance(), SIGNAL(showAuthorityDialog(int, QString, QString)), SLOT(OnShowAuthorityDialog(int, QString, QString)));
 	qRegisterMetaType<HWND>("HWND");
-	connect(SimpleHandler::GetInstance(), SIGNAL(creatBrowserSuccess(HWND, int)), SLOT(OnCreateBrowserSuccess(HWND, int)));
+	connect(SimpleHandler::GetInstance(), SIGNAL(creatBrowserSuccess(HWND, HWND, int)), SLOT(OnCreateBrowserSuccess(HWND, HWND, int)));
 }
 
 QtCef::~QtCef()
@@ -70,6 +73,13 @@ void QtCef::OnNewWin()
 	newWin->show();
 }
 
+// 打开网页
+void QtCef::OnGo()
+{
+	SimpleHandler::GetInstance()->loadURL(m_browserIdentifier, ui.lineEdit_url->text());
+
+}
+
 // 显示授权对话框
 void QtCef::OnShowAuthorityDialog(int browserIdentifier, QString userName, QString userPassword)
 {
@@ -83,9 +93,9 @@ void QtCef::OnShowAuthorityDialog(int browserIdentifier, QString userName, QStri
 }
 
 // 浏览器创建成功
-void QtCef::OnCreateBrowserSuccess(HWND hWnd, int browserIdentifier)
+void QtCef::OnCreateBrowserSuccess(HWND parentHwnd, HWND browserHwnd, int browserIdentifier)
 {
-	if (hWnd == (HWND)this->winId())
+	if (parentHwnd == (HWND)this->winId())
 	{
 		m_browserIdentifier = browserIdentifier;
 	}
