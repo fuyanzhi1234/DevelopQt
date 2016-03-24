@@ -356,3 +356,19 @@ void SimpleHandler::loadURL(int browserIdentifier, QString url)
 		browser->GetMainFrame()->LoadURL(url.toStdString());
 	}
 }
+
+void SimpleHandler::showDevTool(int browserIdentifier)
+{
+	CefRefPtr<CefBrowser> browser = GetBrowser(browserIdentifier);
+	CefWindowInfo window_info;
+	RECT rect;
+	rect.left = 0;
+	rect.top = 50;
+	rect.right = 1024;
+	rect.bottom = 818;
+	window_info.SetAsPopup(NULL, "DevTool");
+
+	// Specify CEF browser settings here.
+	CefBrowserSettings browser_settings;
+	browser->GetHost()->ShowDevTools(window_info, this, browser_settings, CefPoint(0, 0));
+}

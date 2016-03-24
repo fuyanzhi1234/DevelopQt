@@ -50,7 +50,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>NewWin</string>
+     <string>DevTool</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_url">

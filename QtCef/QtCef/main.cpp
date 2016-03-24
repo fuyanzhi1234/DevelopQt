@@ -80,6 +80,7 @@ int main(int argc, char *argv[])
 	settings.no_sandbox = true;
 #endif
 	settings.multi_threaded_message_loop = true;
+	settings.remote_debugging_port = 2012;
 // 	settings.single_process = true;
 	// Initialize CEF.
 	CefInitialize(main_args, settings, app.get(), sandbox_info);

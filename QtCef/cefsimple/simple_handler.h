@@ -184,6 +184,13 @@ public:
 	*/
 	void loadURL(int browserIdentifier, QString url);
 
+	/*
+	œ‘ ædevtool
+	@Param int browserIdentifier : ‰Ø¿¿∆˜±Í ∂
+	@Return void : 
+	*/
+	void showDevTool(int browserIdentifier);
+
 private:
 	// single instance
 	static SimpleHandler *instance;

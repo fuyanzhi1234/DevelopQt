@@ -69,8 +69,7 @@ void QtCef::OnZoomOut()
 // 新窗口
 void QtCef::OnNewWin()
 {
-	NewCefWin *newWin = new NewCefWin();
-	newWin->show();
+	SimpleHandler::GetInstance()->showDevTool(m_browserIdentifier);
 }
 
 // 打开网页
