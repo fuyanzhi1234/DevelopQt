@@ -32,7 +32,7 @@ QtCef::QtCef(QWidget *parent)
 	// Specify CEF browser settings here.
 	CefBrowserSettings browser_settings;
 
-	std::string url = "https://www.baidu.com";
+	std::string url = "http://www.tudou.com/albumplay/LN2umj8JZlQ/2Or-emCvxZM.html";
 	// Create the first browser window.
 	CefBrowserHost::CreateBrowser(window_info, SimpleHandler::GetInstance(), url,
 		browser_settings, NULL);

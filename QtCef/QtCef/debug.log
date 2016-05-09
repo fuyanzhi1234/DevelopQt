@@ -8400,3 +8400,251 @@ Backtrace:
 [0324/105653:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown browser.enable_autospellcorrect
 [0324/105653:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown browser.enable_spellchecking
 [0324/105653:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown spellcheck.use_spelling_service
+[0329/190330:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0329/190330:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0329/190332:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_SEND_BEGIN_MAIN_FRAME T 0 2 0 F F F 1 0
+[0329/190332:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0329/190337:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0329/190554:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0329/190554:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0329/190554:WARNING:channel.cc(315)] RawChannel write error
+[0329/190554:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0329/190554:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0329/190554:WARNING:channel.cc(315)] RawChannel write error
+[0329/190554:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0329/190609:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0329/190609:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0329/190610:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0329/190615:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0329/190616:ERROR:ipc_channel_win.cc(138)] pipe error: 109
+[0329/190723:WARNING:dns_config_service_win.cc(649)] Failed to read DnsConfig.
+[0330/085630:WARNING:dns_config_service_win.cc(649)] Failed to read DnsConfig.
+[0330/143616:ERROR:tcp_socket_win.cc(361)] bind() returned an error: 通常每个套接字地址(协议/网络地址/端口)只允许使用一次。 (0x2740)
+[0330/143616:ERROR:devtools_http_handler_impl.cc(307)] Cannot start http server for devtools. Stop devtools.
+[0330/143618:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/143618:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/143624:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/143626:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0330/143626:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0330/143626:WARNING:channel.cc(315)] RawChannel write error
+[0330/143626:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0330/143626:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 3, remote ID 2147483649)
+[0330/143626:WARNING:channel.cc(315)] RawChannel write error
+[0330/143626:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0330/143703:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/143704:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/143705:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/143705:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_PREPARE_TILES F 0 3 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 1
+[0330/143706:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 1
+[0330/143712:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/143728:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0330/143728:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0330/143728:WARNING:channel.cc(315)] RawChannel write error
+[0330/143728:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0330/143830:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/143830:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/143831:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 0 F F F 1 0
+[0330/143831:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 0 F F F 1 0
+[0330/143831:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 0 F F F 1 0
+[0330/143831:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 0
+[0330/143836:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/143844:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/143848:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0330/143848:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0330/143848:WARNING:channel.cc(315)] RawChannel write error
+[0330/143848:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0330/143848:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0330/143848:WARNING:channel.cc(315)] RawChannel write error
+[0330/143848:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0330/144113:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/144114:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/144131:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0330/144131:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0330/144131:WARNING:channel.cc(315)] RawChannel write error
+[0330/144131:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0330/144147:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/144147:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/144150:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_ANIMATE T 0 1 0 F F T 1 0
+[0330/144154:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0330/144232:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/144232:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0330/144235:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0330/144244:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/144707:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0330/144724:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/144724:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/144738:WARNING:openssl_ssl_util.cc(150)] Unmapped error reason: 268
+[0330/144738:ERROR:ssl_client_socket_openssl.cc(1014)] handshake failed; returned -1, SSL error code 1, net_error -107
+[0330/144745:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0330/155724:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/142128:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142128:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142137:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/142328:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142329:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142331:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0331/142331:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0331/142331:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0331/142331:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0331/142331:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0331/142331:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0331/142331:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0331/142331:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0331/142335:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0331/142335:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0331/142335:WARNING:channel.cc(315)] RawChannel write error
+[0331/142335:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0331/142335:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0331/142335:WARNING:channel.cc(315)] RawChannel write error
+[0331/142335:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/142505:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142505:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 0 F F F 1 1
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 1
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 0 F F F 1 1
+[0331/142507:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 0 F F F 1 1
+[0331/142519:WARNING:content_browser_client.cc(537)] No browser info matching frame process id 4 and routing id 1
+[0331/142519:WARNING:content_browser_client.cc(537)] No browser info matching frame process id 4 and routing id 1
+[0331/142519:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/142623:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142623:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142626:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0331/142629:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/142749:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142749:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142751:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0331/142751:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0331/142751:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0331/142751:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0331/142753:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0331/142753:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0331/142753:WARNING:channel.cc(315)] RawChannel write error
+[0331/142754:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/142818:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142818:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142823:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0331/142824:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/142934:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142935:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/142937:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0331/142937:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0331/142937:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0331/142937:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0331/142939:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0331/142939:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0331/142939:WARNING:channel.cc(315)] RawChannel write error
+[0331/142940:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/143010:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/143010:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/143013:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 1
+[0331/143013:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 1
+[0331/143017:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/143048:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/143048:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/143052:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 0 F F F 1 0
+[0331/143052:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 0
+[0331/143059:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0331/143059:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0331/143059:WARNING:channel.cc(315)] RawChannel write error
+[0331/143059:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0331/143059:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 3, remote ID 2147483649)
+[0331/143059:WARNING:channel.cc(315)] RawChannel write error
+[0331/143059:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/143119:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/143119:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/143122:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 0 F F F 1 0
+[0331/143129:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0331/143129:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0331/143129:WARNING:channel.cc(315)] RawChannel write error
+[0331/143129:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0331/143129:WARNING:channel.cc(549)] Failed to send message to ack remove remote endpoint (local ID 1, remote ID 1)
+[0331/143129:WARNING:channel.cc(315)] RawChannel write error
+[0331/143129:WARNING:raw_channel_win.cc(473)] WriteFile: 管道正在被关闭。 (0xE8)
+[0331/143129:WARNING:channel.cc(549)] Failed to send message to remove remote endpoint (local ID 2147483648, remote ID 2)
+[0331/143129:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy
+[0331/143142:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/143143:ERROR:renderer_main.cc(200)] Running without renderer sandbox
+[0331/143144:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 3 1 F F F 1 0
+[0331/143144:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 0 1 F F F 1 0
+[0331/143144:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 1 1 F F F 1 0
+[0331/143144:VERBOSE2:scheduler.cc(698)] Scheduler::ProcessScheduledActions: ACTION_NONE F 0 2 1 F F F 1 0
+[0331/143151:WARNING:pref_notifier_impl.cc(27)] pref observer found at shutdown proxy

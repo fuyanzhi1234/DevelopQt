@@ -74,6 +74,7 @@ int main(int argc, char *argv[])
 // 	}
 // 	QMessageBox::about(NULL, "main", "4");
 	// Specify CEF global settings here.
+
 	CefSettings settings;
 
 #if !defined(CEF_USE_SANDBOX)

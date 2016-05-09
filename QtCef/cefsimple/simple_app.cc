@@ -17,6 +17,14 @@ SimpleApp::SimpleApp(HWND hParent) {
 
 void SimpleApp::OnContextInitialized() {
 	CEF_REQUIRE_UI_THREAD();
+// 	CefAddWebPluginDirectory("E:/GitRoom/DevelopQt/QtCef/Win32/Release/plugins1");
+// 	CefAddWebPluginPath("E:/GitRoom/DevelopQt/QtCef/Win32/Release/plugins1/np-mswmp.dll");
+// 	CefRefreshWebPlugins();
+
+	CefAddWebPluginDirectory(L"E:/GitRoom/DevelopQt/QtCef/Win32/plugins");
+// 	CefAddWebPluginPath("E:/GitRoom/DevelopQt/QtCef/Win32/plugins/NPSWF32.dll");
+// 	CefRefreshWebPlugins();
+
 	return;
 	// Information used when creating the native window.
 	CefWindowInfo window_info;
