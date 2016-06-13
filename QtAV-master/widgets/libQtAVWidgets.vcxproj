@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BB991270-AB9A-3B37-A276-77C3F16571CE}</ProjectGuid>
+    <RootNamespace>QtAVWidgets</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\lib_win_\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>..\.obj\QtAVWidgets_win_\</IntermediateDirectory>
+    <PrimaryOutput>QtAVWidgets1</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\lib_win_\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>..\.obj\QtAVWidgetsd_win_\</IntermediateDirectory>
+    <PrimaryOutput>QtAVWidgetsd1</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\lib_win_\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">QtAVWidgets1</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</PostBuildEventUseInBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\lib_win_\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">QtAVWidgetsd1</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <PostBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include;..\src;C:\Users\fuyanzhi\Desktop\QtAV-master;..\src\QtAV;.;C:\Users\fuyanzhi\Desktop\QtAV-master;QtAVWidgets;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore;..\.moc\5.6.0\QtAVWidgets;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\.obj\QtAVWidgets_win_\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_CRT_SECURE_NO_WARNINGS;BUILD_QTAVWIDGETS_LIB;QTAV_HAVE_GL=1;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Users\fuyanzhi\Desktop\QtAV-master\lib_win_\QtAV1.lib;user32.lib;$(QTDIR)\lib\Qt5OpenGL.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\Users\fuyanzhi\Desktop\QtAV-master\lib_win_;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\QtAVWidgets1.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>1.10</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_CRT_SECURE_NO_WARNINGS;BUILD_QTAVWIDGETS_LIB;QTAV_HAVE_GL=1;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" ..\bin</Command>
+      <Message>Copy QtAVWidgets1.dll to ..\bin</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include;..\src;C:\Users\fuyanzhi\Desktop\QtAV-master;..\src\QtAV;.;C:\Users\fuyanzhi\Desktop\QtAV-master;QtAVWidgets;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore;..\.moc\5.6.0\QtAVWidgetsd;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>..\.obj\QtAVWidgetsd_win_\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_CRT_SECURE_NO_WARNINGS;BUILD_QTAVWIDGETS_LIB;QTAV_HAVE_GL=1;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Users\fuyanzhi\Desktop\QtAV-master\lib_win_\QtAVd1.lib;user32.lib;$(QTDIR)\lib\Qt5OpenGLd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\Users\fuyanzhi\Desktop\QtAV-master\lib_win_;D:\myprogram\qt\qt5.6.0\5.6\msvc2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)\QtAVWidgetsd1.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <Version>1.10</Version>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_CRT_SECURE_NO_WARNINGS;BUILD_QTAVWIDGETS_LIB;QTAV_HAVE_GL=1;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" ..\bin</Command>
+      <Message>Copy QtAVWidgetsd1.dll to ..\bin</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\.moc\5.6.0\QtAVWidgetsd\moc_GLWidgetRenderer2.cpp" />
+    <ClCompile Include="..\.moc\5.6.0\QtAVWidgetsd\moc_GraphicsItemRenderer.cpp" />
+    <ClCompile Include="..\.moc\5.6.0\QtAVWidgetsd\moc_OpenGLWidgetRenderer.cpp" />
+    <ClCompile Include="..\.moc\5.6.0\QtAVWidgetsd\moc_VideoPreviewWidget.cpp" />
+    <ClCompile Include="..\.moc\5.6.0\QtAVWidgetsd\moc_WidgetRenderer.cpp" />
+    <ClCompile Include="GLWidgetRenderer2.cpp" />
+    <ClCompile Include="GraphicsItemRenderer.cpp" />
+    <ClCompile Include="OpenGLWidgetRenderer.cpp" />
+    <ClCompile Include="VideoPreviewWidget.cpp" />
+    <ClCompile Include="WidgetRenderer.cpp" />
+    <ClCompile Include="global.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="QtAVWidgets\GLWidgetRenderer2.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing GLWidgetRenderer2.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgetsd" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing GLWidgetRenderer2.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="QtAVWidgets\GraphicsItemRenderer.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing GraphicsItemRenderer.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgetsd" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing GraphicsItemRenderer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="QtAVWidgets\OpenGLWidgetRenderer.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OpenGLWidgetRenderer.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgetsd" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OpenGLWidgetRenderer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="QtAVWidgets\QtAVWidgets.h" />
+    <ClInclude Include="QtAVWidgets\QtAVWidgets" />
+    <CustomBuild Include="QtAVWidgets\VideoPreviewWidget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing VideoPreviewWidget.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgetsd" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing VideoPreviewWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="QtAVWidgets\WidgetRenderer.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing WidgetRenderer.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -D_CRT_SECURE_NO_WARNINGS -DBUILD_QTAVWIDGETS_LIB -DQTAV_HAVE_GL=1 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -D_WINDLL "-I." "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include" "-I.\..\src" "-IC:\Users\fuyanzhi\Desktop\QtAV-master" "-I.\..\src\QtAV" "-I.\QtAVWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtOpenGL" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtWidgets" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtGui" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtANGLE" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\include\QtCore" "-I.\..\.moc\5.6.0\QtAVWidgetsd" "-ID:\myprogram\qt\qt5.6.0\5.6\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing WidgetRenderer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\.moc\5.6.0\QtAVWidgetsd\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="QtAVWidgets\global.h" />
+    <ClInclude Include="QtAVWidgets\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\fuyanzhi\Desktop\QtAV-master\widgets\QtAVWidgets_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ResourceCompile>
+    <ResourceCompile Include="C:\Users\fuyanzhi\Desktop\QtAV-master\widgets\QtAVWidgetsd_resource.rc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_Win32="5.6.0" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

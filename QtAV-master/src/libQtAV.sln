@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libQtAVWidgets", "..\widgets\libQtAVWidgets.vcxproj", "{BB991270-AB9A-3B37-A276-77C3F16571CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "simpleplayer", "..\examples\simpleplayer\simpleplayer.vcxproj", "{A2B2691B-655C-33CD-B714-949768DB263B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libQtAV", "libQtAV.vcxproj", "{4CED0F98-B948-301E-B5F4-958CF51207EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB991270-AB9A-3B37-A276-77C3F16571CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BB991270-AB9A-3B37-A276-77C3F16571CE}.Debug|Win32.Build.0 = Debug|Win32
+		{BB991270-AB9A-3B37-A276-77C3F16571CE}.Release|Win32.ActiveCfg = Release|Win32
+		{BB991270-AB9A-3B37-A276-77C3F16571CE}.Release|Win32.Build.0 = Release|Win32
+		{A2B2691B-655C-33CD-B714-949768DB263B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A2B2691B-655C-33CD-B714-949768DB263B}.Debug|Win32.Build.0 = Debug|Win32
+		{A2B2691B-655C-33CD-B714-949768DB263B}.Release|Win32.ActiveCfg = Release|Win32
+		{A2B2691B-655C-33CD-B714-949768DB263B}.Release|Win32.Build.0 = Release|Win32
+		{4CED0F98-B948-301E-B5F4-958CF51207EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4CED0F98-B948-301E-B5F4-958CF51207EF}.Debug|Win32.Build.0 = Debug|Win32
+		{4CED0F98-B948-301E-B5F4-958CF51207EF}.Release|Win32.ActiveCfg = Release|Win32
+		{4CED0F98-B948-301E-B5F4-958CF51207EF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
